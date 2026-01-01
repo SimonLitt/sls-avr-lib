@@ -20,6 +20,8 @@
  * \copyright	GNU General Public License v3.0
  * \file		sls-avr/lcd_hd44780_pin.h
  * \brief		The dot-matrix liquid crystal display lib for HD44780 compatible controller, connected by 6, 7, 10 or 11 pins.
+ *
+ * \code #include <sls-avr/lcd_hd44780_pin.h>\endcode
  */
 #ifndef SLS_AVR_LCD_HD44780_PIN_H_
 #define SLS_AVR_LCD_HD44780_PIN_H_

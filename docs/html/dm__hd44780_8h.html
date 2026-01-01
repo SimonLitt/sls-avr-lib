@@ -126,9 +126,10 @@ Macros</h2></td></tr>
 <tr class="memdesc:ace325563034ba8070c79a3e86632a4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waiting after long command, us.  <br /></td></tr>
 <tr class="separator:ace325563034ba8070c79a3e86632a4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a79020f3bedef4770988984b6265ae" id="r_a72a79020f3bedef4770988984b6265ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72a79020f3bedef4770988984b6265ae">HD44780_ENABLE_PULSE_US</a>&#160;&#160;&#160;0.8</td></tr>
+<tr class="memdesc:a72a79020f3bedef4770988984b6265ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duration of E(enable) pulsation, us.  <br /></td></tr>
 <tr class="separator:a72a79020f3bedef4770988984b6265ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62360c823d3c2fbb5b3c084d2bab72d0" id="r_a62360c823d3c2fbb5b3c084d2bab72d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62360c823d3c2fbb5b3c084d2bab72d0">HD44780_WAIT_BF_LOOP_US</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:a62360c823d3c2fbb5b3c084d2bab72d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional waiting in wait BF loop, us. 0 - waint only 2 x <a class="el" href="#a72a79020f3bedef4770988984b6265ae">HD44780_ENABLE_PULSE_US</a> for 8-bit IDL and 4 x <a class="el" href="#a72a79020f3bedef4770988984b6265ae">HD44780_ENABLE_PULSE_US</a> for 4-bit IDL.  <br /></td></tr>
+<tr class="memdesc:a62360c823d3c2fbb5b3c084d2bab72d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional waiting in wait BF loop, us. 0 - waint only 2 x <a class="el" href="#a72a79020f3bedef4770988984b6265ae" title="Duration of E(enable) pulsation, us.">HD44780_ENABLE_PULSE_US</a> for 8-bit IDL and 4 x <a class="el" href="#a72a79020f3bedef4770988984b6265ae" title="Duration of E(enable) pulsation, us.">HD44780_ENABLE_PULSE_US</a> for 4-bit IDL.  <br /></td></tr>
 <tr class="separator:a62360c823d3c2fbb5b3c084d2bab72d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e7c34e714ef0a8ed9ab043ffc99d61b" id="r_a7e7c34e714ef0a8ed9ab043ffc99d61b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e7c34e714ef0a8ed9ab043ffc99d61b">HD44780_INIT_1_MS</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memdesc:a7e7c34e714ef0a8ed9ab043ffc99d61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waiting after first initialization command, ms.  <br /></td></tr>
@@ -302,8 +303,10 @@ Enumerations</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The HD44780 compatible dot-matrix liquid crystal display lib. </p>
 <dl class="section author"><dt>Author</dt><dd>Simon Litt </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>GNU General Public License v3.0 </dd></dl>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<dl class="section copyright"><dt>Copyright</dt><dd>GNU General Public License v3.0</dd></dl>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dm__hd44780_8h.html">sls-lcd/dm_hd44780.h</a>&gt;</span></div>
+<div class="ttc" id="adm__hd44780_8h_html"><div class="ttname"><a href="dm__hd44780_8h.html">dm_hd44780.h</a></div><div class="ttdoc">The HD44780 compatible dot-matrix liquid crystal display lib.</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a04cb008eb794ade7305f5dfccda4e17d" name="a04cb008eb794ade7305f5dfccda4e17d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04cb008eb794ade7305f5dfccda4e17d">&#9670;&#160;</a></span>HD44780_B_OFF</h2>
 
@@ -715,6 +718,8 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Duration of E(enable) pulsation, us. </p>
 
 </div>
 </div>
@@ -1130,7 +1135,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Additional waiting in wait BF loop, us. 0 - waint only 2 x <a class="el" href="#a72a79020f3bedef4770988984b6265ae">HD44780_ENABLE_PULSE_US</a> for 8-bit IDL and 4 x <a class="el" href="#a72a79020f3bedef4770988984b6265ae">HD44780_ENABLE_PULSE_US</a> for 4-bit IDL. </p>
+<p>Additional waiting in wait BF loop, us. 0 - waint only 2 x <a class="el" href="#a72a79020f3bedef4770988984b6265ae" title="Duration of E(enable) pulsation, us.">HD44780_ENABLE_PULSE_US</a> for 8-bit IDL and 4 x <a class="el" href="#a72a79020f3bedef4770988984b6265ae" title="Duration of E(enable) pulsation, us.">HD44780_ENABLE_PULSE_US</a> for 4-bit IDL. </p>
 
 </div>
 </div>
@@ -1166,14 +1171,22 @@ Enumerations</h2></td></tr>
 
 <p>LCD display type. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349a3953789deecf74f3a33f453d81614aec" name="a6e7b95d84af93a0fe7c614d585f84349a3953789deecf74f3a33f453d81614aec"></a>LCD_8X1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349acbdad823ed41d17f4fefad493809cec7" name="a6e7b95d84af93a0fe7c614d585f84349acbdad823ed41d17f4fefad493809cec7"></a>LCD_16X1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349a6c6af96993a3bda95b337da79bb9f5a6" name="a6e7b95d84af93a0fe7c614d585f84349a6c6af96993a3bda95b337da79bb9f5a6"></a>LCD_16X2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349a3147db12233f49c3e94c7f0d9efb0ca8" name="a6e7b95d84af93a0fe7c614d585f84349a3147db12233f49c3e94c7f0d9efb0ca8"></a>LCD_20X2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349a2c27219b094d63390a3424084a84a686" name="a6e7b95d84af93a0fe7c614d585f84349a2c27219b094d63390a3424084a84a686"></a>LCD_32X2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349ae2ea0ab9b66f229c02a2de9e258b2d83" name="a6e7b95d84af93a0fe7c614d585f84349ae2ea0ab9b66f229c02a2de9e258b2d83"></a>LCD_40X2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349aa90b8dc6c1cb83f254cfb593d648af51" name="a6e7b95d84af93a0fe7c614d585f84349aa90b8dc6c1cb83f254cfb593d648af51"></a>LCD_16X4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349af6f53abfb4787485a5f855349c16294b" name="a6e7b95d84af93a0fe7c614d585f84349af6f53abfb4787485a5f855349c16294b"></a>LCD_20X4&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349a3953789deecf74f3a33f453d81614aec" name="a6e7b95d84af93a0fe7c614d585f84349a3953789deecf74f3a33f453d81614aec"></a>LCD_8X1&#160;</td><td class="fielddoc"><p>Resolution 8х1 characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349acbdad823ed41d17f4fefad493809cec7" name="a6e7b95d84af93a0fe7c614d585f84349acbdad823ed41d17f4fefad493809cec7"></a>LCD_16X1&#160;</td><td class="fielddoc"><p>Resolution 16х1 characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349a6c6af96993a3bda95b337da79bb9f5a6" name="a6e7b95d84af93a0fe7c614d585f84349a6c6af96993a3bda95b337da79bb9f5a6"></a>LCD_16X2&#160;</td><td class="fielddoc"><p>Resolution 16х2 characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349a3147db12233f49c3e94c7f0d9efb0ca8" name="a6e7b95d84af93a0fe7c614d585f84349a3147db12233f49c3e94c7f0d9efb0ca8"></a>LCD_20X2&#160;</td><td class="fielddoc"><p>Resolution 20х2 characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349a2c27219b094d63390a3424084a84a686" name="a6e7b95d84af93a0fe7c614d585f84349a2c27219b094d63390a3424084a84a686"></a>LCD_32X2&#160;</td><td class="fielddoc"><p>Resolution 32х2 characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349ae2ea0ab9b66f229c02a2de9e258b2d83" name="a6e7b95d84af93a0fe7c614d585f84349ae2ea0ab9b66f229c02a2de9e258b2d83"></a>LCD_40X2&#160;</td><td class="fielddoc"><p>Resolution 40х2 characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349aa90b8dc6c1cb83f254cfb593d648af51" name="a6e7b95d84af93a0fe7c614d585f84349aa90b8dc6c1cb83f254cfb593d648af51"></a>LCD_16X4&#160;</td><td class="fielddoc"><p>Resolution 16х4 characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6e7b95d84af93a0fe7c614d585f84349af6f53abfb4787485a5f855349c16294b" name="a6e7b95d84af93a0fe7c614d585f84349af6f53abfb4787485a5f855349c16294b"></a>LCD_20X4&#160;</td><td class="fielddoc"><p>Resolution 20х4 characters. </p>
+</td></tr>
 </table>
 
 </div>
@@ -1192,10 +1205,14 @@ Enumerations</h2></td></tr>
 
 <p>LCD row. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4c5d52ee693f6330daece942b29abfa8a3c7aea74748bff26ca10edcc9425886a" name="a4c5d52ee693f6330daece942b29abfa8a3c7aea74748bff26ca10edcc9425886a"></a>LCD_ROW_1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4c5d52ee693f6330daece942b29abfa8ad70e6c69ffff0618b7908e32bcc1fe2d" name="a4c5d52ee693f6330daece942b29abfa8ad70e6c69ffff0618b7908e32bcc1fe2d"></a>LCD_ROW_2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4c5d52ee693f6330daece942b29abfa8aaf0cf954aeb6f64e640c6dcfa32b6145" name="a4c5d52ee693f6330daece942b29abfa8aaf0cf954aeb6f64e640c6dcfa32b6145"></a>LCD_ROW_3&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4c5d52ee693f6330daece942b29abfa8a34dc7f9eb73d99b53c66c39b802dd58c" name="a4c5d52ee693f6330daece942b29abfa8a34dc7f9eb73d99b53c66c39b802dd58c"></a>LCD_ROW_4&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4c5d52ee693f6330daece942b29abfa8a3c7aea74748bff26ca10edcc9425886a" name="a4c5d52ee693f6330daece942b29abfa8a3c7aea74748bff26ca10edcc9425886a"></a>LCD_ROW_1&#160;</td><td class="fielddoc"><p>1-st display row </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4c5d52ee693f6330daece942b29abfa8ad70e6c69ffff0618b7908e32bcc1fe2d" name="a4c5d52ee693f6330daece942b29abfa8ad70e6c69ffff0618b7908e32bcc1fe2d"></a>LCD_ROW_2&#160;</td><td class="fielddoc"><p>2-nd display row </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4c5d52ee693f6330daece942b29abfa8aaf0cf954aeb6f64e640c6dcfa32b6145" name="a4c5d52ee693f6330daece942b29abfa8aaf0cf954aeb6f64e640c6dcfa32b6145"></a>LCD_ROW_3&#160;</td><td class="fielddoc"><p>3-rd display row </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4c5d52ee693f6330daece942b29abfa8a34dc7f9eb73d99b53c66c39b802dd58c" name="a4c5d52ee693f6330daece942b29abfa8a34dc7f9eb73d99b53c66c39b802dd58c"></a>LCD_ROW_4&#160;</td><td class="fielddoc"><p>4-th display row </p>
+</td></tr>
 </table>
 
 </div>

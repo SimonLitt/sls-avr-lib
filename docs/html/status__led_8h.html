@@ -151,9 +151,9 @@ Functions</h2></td></tr>
 <div class="line"><span class="preprocessor"> #define LED_ERR_PIN            PA2</span></div>
 <div class="line"><span class="preprocessor"> #include &lt;<a class="code" href="status__led_8h.html">sls-avr/status_led.h</a>&gt;</span></div>
 <div class="line"> ...</div>
-<div class="line"> ISR (TIMER0_COMP_vect) { <span class="comment">// 1Hz timer interrupt</span></div>
+<div class="line"> ISR (TIMER0_COMP_vect) { <span class="comment">// timer interrupt, e.g. 1Hz</span></div>
 <div class="line">        ...</div>
-<div class="line">        btn_state();</div>
+<div class="line">        led_stat_switch();</div>
 <div class="line">        ...</div>
 <div class="line">}</div>
 <div class="line"> </div>

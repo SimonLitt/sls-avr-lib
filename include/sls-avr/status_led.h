@@ -30,9 +30,9 @@
  * #define LED_ERR_PIN			PA2
  * #include <sls-avr/status_led.h>
  * ...
- * ISR (TIMER0_COMP_vect) { // 1Hz timer interrupt
+ * ISR (TIMER0_COMP_vect) { // timer interrupt, e.g. 1Hz
  * 		...
- *		btn_state();
+ *		led_stat_switch();
  * 		...
  *}
  *

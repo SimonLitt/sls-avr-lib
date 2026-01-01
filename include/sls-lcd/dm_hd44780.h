@@ -15,6 +15,8 @@
  * \copyright	GNU General Public License v3.0
  * \file		sls-lcd/dm_hd44780.h
  * \brief		The HD44780 compatible dot-matrix liquid crystal display lib.
+ *
+ * \code #include <sls-lcd/dm_hd44780.h>\endcode
  */
 #ifndef SLS_LCD_DM_HD44780_H_
 #define SLS_LCD_DM_HD44780_H_
@@ -22,7 +24,7 @@
 #ifdef SLS_AVR_AVR_H_
 #	if !(defined SLS_AVR_LCD_HD44780_PIN_H_)
 # 		error "Include <sls-avr/lcd_hd44780_pin.h> instead of this file!"
-		//TODO "Include <sls-avr/lcd_hd44780_pin.h> or <sls-avr/lcd_hd44780_i2c.h> instead of this file!"
+		//TODO i2c support "Include <sls-avr/lcd_hd44780_pin.h> or <sls-avr/lcd_hd44780_i2c.h> instead of this file!"
 #	endif
 #else
 #  error "First, enable the target microcontroller header!"
@@ -45,8 +47,8 @@
 #	define HD44780_LONG_EXEC_TIME_US	1760 /**< \brief Waiting after long command, us. */
 #endif
 
-#ifndef HD44780_ENABLE_PULSE_US
-#	define HD44780_ENABLE_PULSE_US		0.8 /**< \brief Duration of E(enable) pulsation, us. */ // 1.5/250000 = 0.6 us
+#ifndef HD44780_ENABLE_PULSE_US			// 1.5/250000 = 0.6 us
+#	define HD44780_ENABLE_PULSE_US		0.8 /**< \brief Duration of E(enable) pulsation, us. */
 #endif
 
 #ifndef HD44780_WAIT_BF_LOOP_US
@@ -266,10 +268,10 @@
 // ---------------------------------------------------------------------------+
 /** \brief LCD row. */
 typedef enum {
-	LCD_ROW_1 = 0,
-	LCD_ROW_2,
-	LCD_ROW_3,
-	LCD_ROW_4,
+	LCD_ROW_1 = 0,	/**< \brief 1-st display row */
+	LCD_ROW_2,		/**< \brief 2-nd display row */
+	LCD_ROW_3,		/**< \brief 3-rd display row */
+	LCD_ROW_4,		/**< \brief 4-th display row */
 } lcd_line_t;
 
 #define HD44780_DISPLAY_8X1				1 /**< \brief LCD display 8x1 */
@@ -286,15 +288,15 @@ typedef enum {
 
 /** \brief LCD display type. */
 typedef enum {
-	LCD_8X1		= HD44780_DISPLAY_8X1,
-	LCD_16X1	= HD44780_DISPLAY_16X1,
-	LCD_16X2	= HD44780_DISPLAY_16X2,
-	LCD_20X2	= HD44780_DISPLAY_20X2,
-	LCD_32X2	= HD44780_DISPLAY_32X2,
-	LCD_40X2	= HD44780_DISPLAY_40X2,
-	LCD_16X4	= HD44780_DISPLAY_16X4,
-	LCD_20X4	= HD44780_DISPLAY_20X4,
-	//LCD_40X4	= HD44780_DISPLAY_40X4,
+	LCD_8X1		= HD44780_DISPLAY_8X1,  /**< \brief Resolution 8х1 characters */
+	LCD_16X1	= HD44780_DISPLAY_16X1, /**< \brief Resolution 16х1 characters */
+	LCD_16X2	= HD44780_DISPLAY_16X2, /**< \brief Resolution 16х2 characters */
+	LCD_20X2	= HD44780_DISPLAY_20X2, /**< \brief Resolution 20х2 characters */
+	LCD_32X2	= HD44780_DISPLAY_32X2, /**< \brief Resolution 32х2 characters */
+	LCD_40X2	= HD44780_DISPLAY_40X2, /**< \brief Resolution 40х2 characters */
+	LCD_16X4	= HD44780_DISPLAY_16X4, /**< \brief Resolution 16х4 characters */
+	LCD_20X4	= HD44780_DISPLAY_20X4, /**< \brief Resolution 20х4 characters */
+	//LCD_40X4	= HD44780_DISPLAY_40X4, /**< \brief Resolution 40х4 characters */
 } lcd_display_t;
 
 #endif // SLS_LCD_DM_HD44780_H_

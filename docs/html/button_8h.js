@@ -9,6 +9,7 @@ var button_8h =
     [ "BTN_INFO_STRUCT_DEFAULT", "button_8h.html#a6209c0428ea98816e9f059b2066a70b2", null ],
     [ "btn_is_clicked", "button_8h.html#aa8c684fc4065c5de93497e139e4ef7d8", null ],
     [ "btn_is_holded", "button_8h.html#a1135ec240acaec79bde9a33bef6dbc23", null ],
+    [ "btn_is_long_clicked", "button_8h.html#a0d276b8780d7b5250346bcd3f1a84337", null ],
     [ "btn_is_ready", "button_8h.html#a4f60a89b322143f103de20e47150efa5", null ],
     [ "BTN_LONG_COUNT", "button_8h.html#a08fd37cd67019610dead28148278683d", null ],
     [ "BTN_MAX_SCAN_COUNT", "button_8h.html#af226d1758c247f6cb813f44daee6d5b3", null ],
@@ -16,5 +17,12 @@ var button_8h =
     [ "btn_set_processed", "button_8h.html#a0881f9e3c1bd9d30c0983cca4a507554", null ],
     [ "BTN_UP_COUNT", "button_8h.html#a8e0c8440cf00c4b7abc01239ba2cb954", null ],
     [ "btn_info_t", "button_8h.html#a422320753de4f5dd4076bb772236f065", null ],
-    [ "btn_proc", "button_8h.html#aafd244d14d25dac289f9f05291fd92e5", null ]
+    [ "btn_get_info", "button_8h.html#a64b9a56c1730122bf47321d9cf6b9178", null ],
+    [ "btn_get_info_fegi", "button_8h.html#a47404536aa051f4282f932d7f7b81a22", null ],
+    [ "btn_proc", "button_8h.html#aafd244d14d25dac289f9f05291fd92e5", null ],
+    [ "btn_proc_atomic", "button_8h.html#ac0de4cc86620016befaf01d0f62da159", null ],
+    [ "btn_proc_atomic_fegi", "button_8h.html#a6142f25f5456d8806a943a280c922bef", null ],
+    [ "btn_reset", "button_8h.html#a3b7a9c313d19a09a21b0660e9d66872d", null ],
+    [ "btn_reset_atomic", "button_8h.html#a4a7186cb277bba6192490de7dcdab08d", null ],
+    [ "btn_reset_atomic_fegi", "button_8h.html#a8fa0aac627b0188c1bbd1276484b7851", null ]
 ];
