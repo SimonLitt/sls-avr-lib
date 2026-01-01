@@ -1,0 +1,157 @@
+// ---------------------------------------------------------------------------+
+//				  Public Domain License
+// ---------------------------------------------------------------------------+
+// This is free and unencumbered software released into the public domain.
+// Anyone is free to copy, modify, publish, use, compile, sell, or distribute
+// this software, either in source code form or as a compiled binary, for any
+// purpose, commercial or non-commercial, and by any means.
+// In jurisdictions that recognize copyright laws, the author or authors of
+// this software dedicate any and all copyright interest in the software to the
+// public domain. We make this dedication for the benefit of the public at
+// large and to the detriment of our heirs and successors. We intend this
+// dedication to be an overt act of relinquishment in perpetuity of all present
+// and future rights to this software under copyright law.
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+// ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+// ---------------------------------------------------------------------------+
+/**
+ * -------------------------------------------------------------------------+
+ *					This file is part of SLS AVR Tools Examples
+ * -------------------------------------------------------------------------+
+ * 				Copyright (C) 2025 Simon Litt
+ *
+ * \copyright	Public Domain
+ * \author		Simon Litt
+ * \authors     [Your Name]
+ * \file		pins.h
+ *
+ * -------------------------------------------------------------------------+
+ * \brief		AVR port definition template.
+ *
+ * \details     Copy the file to the working directory of your development.
+                Rename the file for example to `pins.h`.
+                of ports and individual pins that are not supported by the
+                target microcontroller. Uncomment the definitions of the pins
+                used and give them a meaningful name. Include this file at
+                the top level at the beginning of the project. At least
+                before including the headers of this library.
+                Not PCH mode: Enable the inclusion of the header file using
+                the GCC `-include` directive. For example `-include "pins.h"`
+                Of course, you can delete this comment and the comment
+                containing the license text. You can also replace them with
+                any comments of your own.
+ * -------------------------------------------------------------------------+
+ */
+#ifndef PINS_H_INCLUDED
+#define PINS_H_INCLUDED
+
+/*		Port A */
+//#define _PORT_A_PURPOSE_0	A
+//#define _PORT_A_PURPOSE_1	A
+//#define _PORT_A_PURPOSE_2	A
+//#define _PORT_A_PURPOSE_3	A
+
+//#define __PA0_PURPOSE		PA0
+//#define __PA1_PURPOSE		PA1
+//#define __PA2_PURPOSE		PA2
+//#define __PA3_PURPOSE		PA3
+//#define __PA4_PURPOSE		PA4
+//#define __PA5_PURPOSE		PA5
+//#define __PA6_PURPOSE		PA6
+//#define __PA7_PURPOSE		PA7
+
+/*		Port B */
+//#define _PORT_B_PURPOSE_0	B
+//#define _PORT_B_PURPOSE_1	B
+//#define _PORT_B_PURPOSE_2	B
+//#define _PORT_B_PURPOSE_3	B
+
+//#define __PB0_PURPOSE		PB0
+//#define __PB1_PURPOSE		PB1
+//#define __PB2_PURPOSE		PB2
+//#define __PB3_PURPOSE		PB3
+//#define __PB4_PURPOSE		PB4
+//#define __PB5_PURPOSE		PB5
+//#define __PB6_PURPOSE		PB6
+//#define __PB7_PURPOSE		PB7
+
+/*		Port C */
+//#define _PORT_C_PURPOSE_0	C
+//#define _PORT_C_PURPOSE_1	C
+//#define _PORT_C_PURPOSE_2	C
+//#define _PORT_C_PURPOSE_3	C
+
+//#define __PC0_PURPOSE		PC0
+//#define __PC1_PURPOSE		PC1
+//#define __PC2_PURPOSE		PC2
+//#define __PC3_PURPOSE		PC3
+//#define __PC4_PURPOSE		PC4
+//#define __PC5_PURPOSE		PC5
+//#define __PC6_PURPOSE		PC6
+//#define __PC7_PURPOSE		PC7
+
+/*		Port D */
+//#define _PORT_D_PURPOSE_0	D
+//#define _PORT_D_PURPOSE_1	D
+//#define _PORT_D_PURPOSE_2	D
+//#define _PORT_D_PURPOSE_3	D
+
+//#define __PD0_PURPOSE		PD0
+//#define __PD1_PURPOSE		PD1
+//#define __PD2_PURPOSE		PD2
+//#define __PD3_PURPOSE		PD3
+//#define __PD4_PURPOSE		PD4
+//#define __PD5_PURPOSE		PD5
+//#define __PD6_PURPOSE		PD6
+//#define __PD7_PURPOSE		PD7
+
+/*		Port E */
+//#define _PORT_E_PURPOSE_0	E
+//#define _PORT_E_PURPOSE_1	E
+//#define _PORT_E_PURPOSE_2	E
+//#define _PORT_E_PURPOSE_3	E
+
+//#define __PE0_PURPOSE		PE0
+//#define __PE1_PURPOSE		PE1
+//#define __PE2_PURPOSE		PE2
+//#define __PE3_PURPOSE		PE3
+//#define __PE4_PURPOSE		PE4
+//#define __PE5_PURPOSE		PE5
+//#define __PE6_PURPOSE		PE6
+//#define __PE7_PURPOSE		PE7
+
+/*		Port F */
+//#define _PORT_F_PURPOSE_0	F
+//#define _PORT_F_PURPOSE_1	F
+//#define _PORT_F_PURPOSE_2	F
+//#define _PORT_F_PURPOSE_3	F
+
+//#define __PF0_PURPOSE		PF0
+//#define __PF1_PURPOSE		PF1
+//#define __PF2_PURPOSE		PF2
+//#define __PF3_PURPOSE		PF3
+//#define __PF4_PURPOSE		PF4
+//#define __PF5_PURPOSE		PF5
+//#define __PF6_PURPOSE		PF6
+//#define __PF7_PURPOSE		PF7
+
+/*		Port G */
+//#define _PORT_G_PURPOSE_0	G
+//#define _PORT_G_PURPOSE_1	G
+//#define _PORT_G_PURPOSE_2	G
+//#define _PORT_G_PURPOSE_3	G
+
+//#define __PG0_PURPOSE		PG0
+//#define __PG1_PURPOSE		PG1
+//#define __PG2_PURPOSE		PG2
+//#define __PG3_PURPOSE		PG3
+//#define __PG4_PURPOSE		PG4
+//#define __PG5_PURPOSE		PG5
+//#define __PG6_PURPOSE		PG6
+//#define __PG7_PURPOSE		PG7
+
+#endif // PINS_H_INCLUDED
