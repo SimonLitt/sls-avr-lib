@@ -147,7 +147,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a8e0c8440cf00c4b7abc01239ba2cb954"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number that is compared to the counter of inputs to the <a class="el" href="#aafd244d14d25dac289f9f05291fd92e5" title="Update counters and button press stages for a button information structure.">btn_proc</a> function in the unpressed state 0-254. When the set value is reached, the button takes on the triggered status.  <br /></td></tr>
 <tr class="separator:a8e0c8440cf00c4b7abc01239ba2cb954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62f6592bf051d30e0725bcf8e20dd40f" id="r_a62f6592bf051d30e0725bcf8e20dd40f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62f6592bf051d30e0725bcf8e20dd40f">BTN_FAST_SOME_CODE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:a62f6592bf051d30e0725bcf8e20dd40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If enabled then in the <a class="el" href="#a3b7a9c313d19a09a21b0660e9d66872d" title="Resets the button state to default.">btn_reset</a> and #btn_reset_fegi functions, instead of resetting, only the processing flag is set.  <br /></td></tr>
+<tr class="memdesc:a62f6592bf051d30e0725bcf8e20dd40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If enabled then in the <a class="el" href="#a3b7a9c313d19a09a21b0660e9d66872d" title="Resets the button state to default.">btn_reset</a> function, instead of resetting, only the processing flag is set.  <br /></td></tr>
 <tr class="separator:a62f6592bf051d30e0725bcf8e20dd40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ffbf00cda68d65de44f5769aeeee7d5" id="r_a8ffbf00cda68d65de44f5769aeeee7d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ffbf00cda68d65de44f5769aeeee7d5">BTN_INFO_STATE_DEFAULT</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:a8ffbf00cda68d65de44f5769aeeee7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default state value. See <a class="el" href="structbtn__info__struct.html" title="Information about a button.">btn_info_struct</a>.  <br /></td></tr>
@@ -209,7 +209,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A AVR helper for working with individual buttons. </p>
-<dl class="section author"><dt>Author</dt><dd>Simon Litt </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Simon Litt <a href="#" onclick="location.href='mai'+'lto:'+'sim'+'on'+'@1i'+'tt'+'.ne'+'t'; return false;">simon<span class="obfuscator">.nosp@m.</span>@1it<span class="obfuscator">.nosp@m.</span>t.net</a> <a href="https://coding.1itt.net">https://coding.1itt.net</a>, <a href="https://github.com/SimonLitt">https://github.com/SimonLitt</a> </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>GNU General Public License v3.0</dd></dl>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="avr_8h.html">sls-avr/avr.h</a>&gt;</span></div>
 <div class="line">...</div>
@@ -235,14 +235,14 @@ Functions</h2></td></tr>
 <div class="line">}</div>
 <div class="line">...</div>
 <div class="ttc" id="aavr_8h_html"><div class="ttname"><a href="avr_8h.html">avr.h</a></div><div class="ttdoc">AVR lib.</div></div>
-<div class="ttc" id="abutton_8h_html_a3b7a9c313d19a09a21b0660e9d66872d"><div class="ttname"><a href="#a3b7a9c313d19a09a21b0660e9d66872d">btn_reset</a></div><div class="ttdeci">static void btn_reset(btn_info_t *const btn_info)</div><div class="ttdoc">Resets the button state to default.</div><div class="ttdef"><b>Definition</b> button.h:223</div></div>
-<div class="ttc" id="abutton_8h_html_a422320753de4f5dd4076bb772236f065"><div class="ttname"><a href="#a422320753de4f5dd4076bb772236f065">btn_info_t</a></div><div class="ttdeci">volatile btn_info_struct btn_info_t</div><div class="ttdoc">Information about a button type. See btn_info_struct.</div><div class="ttdef"><b>Definition</b> button.h:163</div></div>
-<div class="ttc" id="abutton_8h_html_a6209c0428ea98816e9f059b2066a70b2"><div class="ttname"><a href="#a6209c0428ea98816e9f059b2066a70b2">BTN_INFO_STRUCT_DEFAULT</a></div><div class="ttdeci">#define BTN_INFO_STRUCT_DEFAULT</div><div class="ttdoc">Default button information structure btn_info_struct.</div><div class="ttdef"><b>Definition</b> button.h:168</div></div>
-<div class="ttc" id="abutton_8h_html_aa8c684fc4065c5de93497e139e4ef7d8"><div class="ttname"><a href="#aa8c684fc4065c5de93497e139e4ef7d8">btn_is_clicked</a></div><div class="ttdeci">#define btn_is_clicked(_state)</div><div class="ttdoc">Tests normal click.</div><div class="ttdef"><b>Definition</b> button.h:187</div></div>
+<div class="ttc" id="abutton_8h_html_a3b7a9c313d19a09a21b0660e9d66872d"><div class="ttname"><a href="#a3b7a9c313d19a09a21b0660e9d66872d">btn_reset</a></div><div class="ttdeci">static void btn_reset(btn_info_t *const btn_info)</div><div class="ttdoc">Resets the button state to default.</div><div class="ttdef"><b>Definition</b> button.h:226</div></div>
+<div class="ttc" id="abutton_8h_html_a422320753de4f5dd4076bb772236f065"><div class="ttname"><a href="#a422320753de4f5dd4076bb772236f065">btn_info_t</a></div><div class="ttdeci">volatile btn_info_struct btn_info_t</div><div class="ttdoc">Information about a button type. See btn_info_struct.</div><div class="ttdef"><b>Definition</b> button.h:166</div></div>
+<div class="ttc" id="abutton_8h_html_a6209c0428ea98816e9f059b2066a70b2"><div class="ttname"><a href="#a6209c0428ea98816e9f059b2066a70b2">BTN_INFO_STRUCT_DEFAULT</a></div><div class="ttdeci">#define BTN_INFO_STRUCT_DEFAULT</div><div class="ttdoc">Default button information structure btn_info_struct.</div><div class="ttdef"><b>Definition</b> button.h:171</div></div>
+<div class="ttc" id="abutton_8h_html_aa8c684fc4065c5de93497e139e4ef7d8"><div class="ttname"><a href="#aa8c684fc4065c5de93497e139e4ef7d8">btn_is_clicked</a></div><div class="ttdeci">#define btn_is_clicked(_state)</div><div class="ttdoc">Tests normal click.</div><div class="ttdef"><b>Definition</b> button.h:190</div></div>
 <div class="ttc" id="abutton_8h_html_aafd244d14d25dac289f9f05291fd92e5"><div class="ttname"><a href="#aafd244d14d25dac289f9f05291fd92e5">btn_proc</a></div><div class="ttdeci">void btn_proc(btn_info_t *const btn_info, const bool is_now_hold)</div><div class="ttdoc">Update counters and button press stages for a button information structure.</div></div>
-<div class="ttc" id="agpio_8h_html_a02bd6879d3fc370742e8e9925f9997f4"><div class="ttname"><a href="gpio_8h.html#a02bd6879d3fc370742e8e9925f9997f4">PIN_TO_READ</a></div><div class="ttdeci">#define PIN_TO_READ</div><div class="ttdef"><b>Definition</b> gpio.h:494</div></div>
-<div class="ttc" id="agpio_8h_html_ab3eed40c58e5e0399df8a8fb27f081da"><div class="ttname"><a href="gpio_8h.html#ab3eed40c58e5e0399df8a8fb27f081da">PIN_READ</a></div><div class="ttdeci">#define PIN_READ(_p, _b)</div><div class="ttdef"><b>Definition</b> gpio.h:461</div></div>
-<div class="ttc" id="astructbtn__info__struct_html_a0abf7468901086ebb2d3eeb9096c1730"><div class="ttname"><a href="structbtn__info__struct.html#a0abf7468901086ebb2d3eeb9096c1730">btn_info_struct::state</a></div><div class="ttdeci">byte_t state</div><div class="ttdoc">Stages and states flags of click processing.</div><div class="ttdef"><b>Definition</b> button.h:160</div></div>
+<div class="ttc" id="agpio_8h_html_a02bd6879d3fc370742e8e9925f9997f4"><div class="ttname"><a href="gpio_8h.html#a02bd6879d3fc370742e8e9925f9997f4">PIN_TO_READ</a></div><div class="ttdeci">#define PIN_TO_READ</div><div class="ttdef"><b>Definition</b> gpio.h:497</div></div>
+<div class="ttc" id="agpio_8h_html_ab3eed40c58e5e0399df8a8fb27f081da"><div class="ttname"><a href="gpio_8h.html#ab3eed40c58e5e0399df8a8fb27f081da">PIN_READ</a></div><div class="ttdeci">#define PIN_READ(_p, _b)</div><div class="ttdef"><b>Definition</b> gpio.h:464</div></div>
+<div class="ttc" id="astructbtn__info__struct_html_a0abf7468901086ebb2d3eeb9096c1730"><div class="ttname"><a href="structbtn__info__struct.html#a0abf7468901086ebb2d3eeb9096c1730">btn_info_struct::state</a></div><div class="ttdeci">byte_t state</div><div class="ttdoc">Stages and states flags of click processing.</div><div class="ttdef"><b>Definition</b> button.h:163</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a4e59c79298031e9d90c923312d0e7e9d" name="a4e59c79298031e9d90c923312d0e7e9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e59c79298031e9d90c923312d0e7e9d">&#9670;&#160;</a></span>BTN_ALLOW_LONG</h2>
@@ -305,8 +305,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>If enabled then in the <a class="el" href="#a3b7a9c313d19a09a21b0660e9d66872d" title="Resets the button state to default.">btn_reset</a> and #btn_reset_fegi functions, instead of resetting, only the processing flag is set. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>This allows for the same code to be achieved with the flag on and off, but disables re-triggering. </dd></dl>
+<p>If enabled then in the <a class="el" href="#a3b7a9c313d19a09a21b0660e9d66872d" title="Resets the button state to default.">btn_reset</a> function, instead of resetting, only the processing flag is set. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>This allows for the same code to be achieved with the <a class="el" href="#a8e0c8440cf00c4b7abc01239ba2cb954" title="The number that is compared to the counter of inputs to the btn_proc function in the unpressed state ...">BTN_UP_COUNT</a> macro on and off, but disables re-triggering. </dd></dl>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_define" href="defs_8h.html#a9f70b2eec7f17ae6a5df4b92ddcd0c12">flag_is_set</a>((_state), __BTN_STATE_SHORT_CLICK_BIT))</div>
-<div class="ttc" id="adefs_8h_html_a9f70b2eec7f17ae6a5df4b92ddcd0c12"><div class="ttname"><a href="defs_8h.html#a9f70b2eec7f17ae6a5df4b92ddcd0c12">flag_is_set</a></div><div class="ttdeci">#define flag_is_set(_val, _b)</div><div class="ttdoc">Test whether bit _b in flags _val is set.</div><div class="ttdef"><b>Definition</b> defs.h:107</div></div>
+<div class="ttc" id="adefs_8h_html_a9f70b2eec7f17ae6a5df4b92ddcd0c12"><div class="ttname"><a href="defs_8h.html#a9f70b2eec7f17ae6a5df4b92ddcd0c12">flag_is_set</a></div><div class="ttdeci">#define flag_is_set(_val, _b)</div><div class="ttdoc">Test whether bit _b in flags _val is set.</div><div class="ttdef"><b>Definition</b> defs.h:141</div></div>
 </div><!-- fragment -->
 <p>Tests normal click. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -585,7 +585,7 @@ Functions</h2></td></tr>
 <p>Actions before events proc. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">btn_info[out]</td><td>Information about a button. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">btn_info</td><td>Information about a button. </td></tr>
   </table>
   </dd>
 </dl>
@@ -619,7 +619,7 @@ Functions</h2></td></tr>
 <p>Such as the <a class="el" href="#a64b9a56c1730122bf47321d9cf6b9178" title="Actions before events proc.">btn_get_info</a>, but with force enabling ot the global interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">btn_info[out]</td><td>Information about a button. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">btn_info</td><td>Information about a button. </td></tr>
   </table>
   </dd>
 </dl>
@@ -648,8 +648,8 @@ Functions</h2></td></tr>
 <p>Update counters and button press stages for a button information structure. </p>
 <p>If not called from an interrupt, or if other interrupts are enabled in the interrupt, then it should be executed atomically. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">btn_info[out]</td><td>Information about a button. </td></tr>
-    <tr><td class="paramname">is_now_hold[in]</td><td>Is the button currently pressed? </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">btn_info</td><td>Information about a button. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_now_hold</td><td>Is the button currently pressed? </td></tr>
   </table>
   </dd>
 </dl>
@@ -686,8 +686,8 @@ Functions</h2></td></tr>
 <p>Such as the <a class="el" href="#aafd244d14d25dac289f9f05291fd92e5" title="Update counters and button press stages for a button information structure.">btn_proc</a>, but executed atomically. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">btn_info[out]</td><td>Information about a button. </td></tr>
-    <tr><td class="paramname">is_now_hold[in]</td><td>Is the button currently pressed? </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">btn_info</td><td>Information about a button. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_now_hold</td><td>Is the button currently pressed? </td></tr>
   </table>
   </dd>
 </dl>
@@ -724,8 +724,8 @@ Functions</h2></td></tr>
 <p>Such as the <a class="el" href="#aafd244d14d25dac289f9f05291fd92e5" title="Update counters and button press stages for a button information structure.">btn_proc</a>, but executed atomically with force enabling ot the global interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">btn_info[out]</td><td>Information about a button. </td></tr>
-    <tr><td class="paramname">is_now_hold[in]</td><td>Is the button currently pressed? </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">btn_info</td><td>Information about a button. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_now_hold</td><td>Is the button currently pressed? </td></tr>
   </table>
   </dd>
 </dl>
@@ -758,7 +758,7 @@ Functions</h2></td></tr>
 <p>Resets the button state to default. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">btn_info[out]</td><td>Information about a button. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">btn_info</td><td>Information about a button. </td></tr>
   </table>
   </dd>
 </dl>
@@ -791,7 +791,7 @@ Functions</h2></td></tr>
 <p>Such as the <a class="el" href="#a3b7a9c313d19a09a21b0660e9d66872d" title="Resets the button state to default.">btn_reset</a>, but executed atomically. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">btn_info[out]</td><td>Information about a button. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">btn_info</td><td>Information about a button. </td></tr>
   </table>
   </dd>
 </dl>
@@ -824,7 +824,7 @@ Functions</h2></td></tr>
 <p>Such as the <a class="el" href="#a3b7a9c313d19a09a21b0660e9d66872d" title="Resets the button state to default.">btn_reset</a>, but executed atomically with force enabling ot the global interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">btn_info[out]</td><td>Information about a button. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">btn_info</td><td>Information about a button. </td></tr>
   </table>
   </dd>
 </dl>

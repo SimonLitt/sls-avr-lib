@@ -1,7 +1,9 @@
 // ---------------------------------------------------------------------------+
-//					This file is part of SLS AVR Tools
+//					This file is part of SLS AVR Library
+//				https://github.com/SimonLitt/sls-avr-lib
 // ---------------------------------------------------------------------------+
-// Copyright (C) 2025 Simon Litt
+// Copyright (C) 2025 Simon Litt <simon@1itt.net> https://coding.1itt.net,
+// 												  https://github.com/SimonLitt
 //
 // This program is free software: you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -443,6 +445,8 @@ lcd_info_t lcd_init(const lcd_init_t *const config) {
 	}
 	#if LCD_HD44780_PIN_MULTI_MODE
 	return _info;
+	#elif LCD_HD44780_PIN_SINGLE_SOME_CODE
+	return 0;
 	#endif
 }
 

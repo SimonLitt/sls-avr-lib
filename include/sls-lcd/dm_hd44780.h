@@ -1,3 +1,9 @@
+// ---------------------------------------------------------------------------+
+//					This file is part of SLS LCD Library
+// ---------------------------------------------------------------------------+
+// Copyright (C) 2025 Simon Litt <simon@1itt.net> https://coding.1itt.net,
+// 												  https://github.com/SimonLitt
+//
 // This program is free software: you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
 // Software Foundation, version 3.
@@ -11,7 +17,8 @@
 // with this program. If not, see <https://www.gnu.org/licenses/>.
 // ---------------------------------------------------------------------------+
 /**
- * \author		Simon Litt
+ * \author		Simon Litt <simon@1itt.net> https://coding.1itt.net,
+ *              							https://github.com/SimonLitt
  * \copyright	GNU General Public License v3.0
  * \file		sls-lcd/dm_hd44780.h
  * \brief		The HD44780 compatible dot-matrix liquid crystal display lib.

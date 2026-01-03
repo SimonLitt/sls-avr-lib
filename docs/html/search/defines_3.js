@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ddr_5f2_5fpin_0',['ddr_2_pin',['../defs_8h.html#a57171f296316a5925e42639aafa50981',1,'defs.h']]],
-  ['ddr_5f2_5fport_1',['ddr_2_port',['../defs_8h.html#acaed0cbc7b69526959b11dcb3b05fc9d',1,'defs.h']]]
+  ['flag_5fis_5fclear_0',['flag_is_clear',['../defs_8h.html#a071682e26649f5701f8b08bc38cae265',1,'defs.h']]],
+  ['flag_5fis_5fset_1',['flag_is_set',['../defs_8h.html#a9f70b2eec7f17ae6a5df4b92ddcd0c12',1,'defs.h']]]
 ];

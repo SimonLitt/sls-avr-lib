@@ -19,17 +19,18 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ---------------------------------------------------------------------------+
 /**
- * -------------------------------------------------------------------------+
+ * ---------------------------------------------------------------------------+
  *					This file is part of SLS AVR Tools Examples
- * -------------------------------------------------------------------------+
- * 				Copyright (C) 2025 Simon Litt
+ *			https://github.com/SimonLitt/sls-avr-lib/tree/main/examples
+ * ---------------------------------------------------------------------------+
  *
  * \copyright	Public Domain
- * \author		Simon Litt
+ * \author		Simon Litt <simon@1itt.net> https://coding.1itt.net,
+ *              							https://github.com/SimonLitt
  * \authors     [Your Name]
  * \file		pins.h
  *
- * -------------------------------------------------------------------------+
+ * ---------------------------------------------------------------------------+
  * \brief		AVR port definition template.
  *
  * \details     Copy the file to the working directory of your development.
@@ -44,7 +45,7 @@
                 Of course, you can delete this comment and the comment
                 containing the license text. You can also replace them with
                 any comments of your own.
- * -------------------------------------------------------------------------+
+ * --------------------------------------------------------------------------+
  */
 #ifndef PINS_H_INCLUDED
 #define PINS_H_INCLUDED

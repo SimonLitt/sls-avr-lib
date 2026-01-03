@@ -1,7 +1,9 @@
 // ---------------------------------------------------------------------------+
-//					This file is part of SLS AVR Tools
+//					This file is part of SLS AVR Library
+//				https://github.com/SimonLitt/sls-avr-lib
 // ---------------------------------------------------------------------------+
-// Copyright (C) 2025 Simon Litt
+// Copyright (C) 2025 Simon Litt <simon@1itt.net> https://coding.1itt.net,
+// 												  https://github.com/SimonLitt
 //
 // This program is free software: you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free

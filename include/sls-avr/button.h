@@ -1,7 +1,9 @@
 // ---------------------------------------------------------------------------+
-//					This file is part of SLS AVR Tools
+//					This file is part of SLS AVR Library
+//				https://github.com/SimonLitt/sls-avr-lib
 // ---------------------------------------------------------------------------+
-// Copyright (C) 2025 Simon Litt
+// Copyright (C) 2025 Simon Litt <simon@1itt.net> https://coding.1itt.net,
+// 												  https://github.com/SimonLitt
 //
 // This program is free software: you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -16,7 +18,8 @@
 // with this program. If not, see <https://www.gnu.org/licenses/>.
 // ---------------------------------------------------------------------------+
 /**
- * \author		Simon Litt
+ * \author		Simon Litt <simon@1itt.net> https://coding.1itt.net,
+ *              							https://github.com/SimonLitt
  * \copyright	GNU General Public License v3.0
  * \file		sls-avr/button.h
  *
@@ -104,7 +107,7 @@
 /** \endcond */
 
 #ifndef BTN_FAST_SOME_CODE
-#	define BTN_FAST_SOME_CODE 0 /**< \brief \brief If enabled then in the #btn_reset and #btn_reset_fegi functions, instead of resetting, only the processing flag is set.  \remark This allows for the same code to be achieved with the flag on and off, but disables re-triggering.*/
+#	define BTN_FAST_SOME_CODE 0 /**< \brief If enabled then in the #btn_reset function, instead of resetting, only the processing flag is set.  \remark This allows for the same code to be achieved with the #BTN_UP_COUNT macro on and off, but disables re-triggering. */
 #endif // BTN_FAST_SOME_CODE
 
 /** \cond NO_DOC */
@@ -218,7 +221,7 @@ static inline void _btn_reset(btn_info_t *const btn_info) {
 /** \endcond */
 
 /** \brief Resets the button state to default.
- * \param btn_info[out] Information about a button.
+ * \param[out] btn_info Information about a button.
  */
 static inline void btn_reset(btn_info_t *const btn_info) {
 	#if defined(__BTN_ALLOW_FAST_SCAN) && BTN_FAST_SOME_CODE
@@ -231,43 +234,43 @@ static inline void btn_reset(btn_info_t *const btn_info) {
 /** \brief Update counters and button press stages for a button information structure.
  *
  * If not called from an interrupt, or if other interrupts are enabled in the interrupt, then it should be executed atomically.
- * \param btn_info[out] Information about a button.
- * \param is_now_hold[in] Is the button currently pressed?
+ * \param[out] btn_info Information about a button.
+ * \param[in] is_now_hold Is the button currently pressed?
  */
 void btn_proc(btn_info_t *const btn_info, const bool is_now_hold);
 
 #if defined(__DOXYGEN__)
 
 /** \brief Such as the #btn_reset, but executed atomically.
- * \param btn_info[out] Information about a button.
+ * \param[out] btn_info Information about a button.
  */
 static inline void btn_reset_atomic(btn_info_t *const btn_info);
 
 /** \brief Such as the #btn_reset, but executed atomically with force enabling ot the global interrupts.
- * \param btn_info[out] Information about a button.
+ * \param[out] btn_info Information about a button.
  */
 static inline void btn_reset_atomic_fegi(btn_info_t *const btn_info);
 
 /** \brief Such as the #btn_proc, but executed atomically.
- * \param btn_info[out] Information about a button.
- * \param is_now_hold[in] Is the button currently pressed?
+ * \param[out] btn_info Information about a button.
+ * \param[in] is_now_hold Is the button currently pressed?
  */
 static inline void btn_proc_atomic(btn_info_t *const btn_info, const bool is_now_hold);
 
 /** \brief Such as the #btn_proc, but executed atomically with force enabling ot the global interrupts.
- * \param btn_info[out] Information about a button.
- * \param is_now_hold[in] Is the button currently pressed?
+ * \param[out] btn_info Information about a button.
+ * \param[in] is_now_hold Is the button currently pressed?
  */
 static inline void btn_proc_atomic_fegi(btn_info_t *const btn_info, const bool is_now_hold);
 
 /** \brief Actions before events proc.
- * \param btn_info[out] Information about a button.
+ * \param[out] btn_info Information about a button.
  * \return Currently copy of #btn_info_struct
  */
 static inline btn_info_struct btn_get_info(btn_info_t *const btn_info);
 
 /** \brief Such as the #btn_get_info, but with force enabling ot the global interrupts.
- * \param btn_info[out] Information about a button. */
+ * \param[out] btn_info Information about a button. */
 static inline btn_info_struct btn_get_info_fegi(btn_info_t *const btn_info);
 #endif // __DOXYGEN__
 

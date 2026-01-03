@@ -116,25 +116,69 @@ $(function(){initNavTree('assert_8h.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af99dba87c80c5117e080ef0ed62eb877" id="r_af99dba87c80c5117e080ef0ed62eb877"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af99dba87c80c5117e080ef0ed62eb877">assert_na</a>(e)</td></tr>
-<tr class="memdesc:af99dba87c80c5117e080ef0ed62eb877"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="#af99dba87c80c5117e080ef0ed62eb877" title="The assert_na() macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR...">assert_na()</a> macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR definition, but don't call abort().  <br /></td></tr>
-<tr class="separator:af99dba87c80c5117e080ef0ed62eb877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef00618ac7543a53b0ba6867d39d771f" id="r_aef00618ac7543a53b0ba6867d39d771f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef00618ac7543a53b0ba6867d39d771f">assert_na</a>(expression)</td></tr>
+<tr class="memdesc:aef00618ac7543a53b0ba6867d39d771f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="#aef00618ac7543a53b0ba6867d39d771f" title="The assert_na() macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR...">assert_na()</a> macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR definition, but don't call abort().  <br /></td></tr>
+<tr class="separator:aef00618ac7543a53b0ba6867d39d771f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442c02940502d8ec1a5e81cae6640806" id="r_a442c02940502d8ec1a5e81cae6640806"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a442c02940502d8ec1a5e81cae6640806">ASSERT_USE_ABORT</a></td></tr>
+<tr class="memdesc:a442c02940502d8ec1a5e81cae6640806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the behavior of the <a class="el" href="#a87e006a00875d2e518652108f6cb5790" title="The macro tests the given expression.">ASSERT</a> macro with the standard one.  <br /></td></tr>
+<tr class="separator:a442c02940502d8ec1a5e81cae6640806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e006a00875d2e518652108f6cb5790" id="r_a87e006a00875d2e518652108f6cb5790"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87e006a00875d2e518652108f6cb5790">ASSERT</a>(expression)</td></tr>
+<tr class="memdesc:a87e006a00875d2e518652108f6cb5790"><td class="mdescLeft">&#160;</td><td class="mdescRight">The macro tests the given expression.  <br /></td></tr>
+<tr class="separator:a87e006a00875d2e518652108f6cb5790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Alternative AVR assert. </p>
-<dl class="section author"><dt>Author</dt><dd>Simon Litt </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Simon Litt <a href="#" onclick="location.href='mai'+'lto:'+'sim'+'on'+'@1i'+'tt'+'.ne'+'t'; return false;">simon<span class="obfuscator">.nosp@m.</span>@1it<span class="obfuscator">.nosp@m.</span>t.net</a> <a href="https://coding.1itt.net">https://coding.1itt.net</a>, <a href="https://github.com/SimonLitt">https://github.com/SimonLitt</a> </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>GNU General Public License v3.0</dd></dl>
 <p>Because standard __assert calls abort() function. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="assert_8h.html">sls-avr/assert.h</a>&gt;</span></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>) {</div>
 <div class="line">    ...</div>
-<div class="line">    <a class="code hl_define" href="#af99dba87c80c5117e080ef0ed62eb877">assert_na</a>(PIND == 0xF0);</div>
+<div class="line">    <a class="code hl_define" href="#aef00618ac7543a53b0ba6867d39d771f">assert_na</a>(PIND == 0xF0);</div>
 <div class="line">    ...</div>
 <div class="line">}</div>
 <div class="ttc" id="aassert_8h_html"><div class="ttname"><a href="assert_8h.html">assert.h</a></div><div class="ttdoc">Alternative AVR assert.</div></div>
-<div class="ttc" id="aassert_8h_html_af99dba87c80c5117e080ef0ed62eb877"><div class="ttname"><a href="#af99dba87c80c5117e080ef0ed62eb877">assert_na</a></div><div class="ttdeci">#define assert_na(e)</div><div class="ttdoc">The assert_na() macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR...</div><div class="ttdef"><b>Definition</b> assert.h:49</div></div>
+<div class="ttc" id="aassert_8h_html_aef00618ac7543a53b0ba6867d39d771f"><div class="ttname"><a href="#aef00618ac7543a53b0ba6867d39d771f">assert_na</a></div><div class="ttdeci">#define assert_na(expression)</div><div class="ttdoc">The assert_na() macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR...</div><div class="ttdef"><b>Definition</b> assert.h:62</div></div>
+</div><!-- fragment --><div class="fragment"><div class="line"><span class="preprocessor">#define ASSERT_USE_ABORT</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="assert_8h.html">sls-avr/assert.h</a>&gt;</span></div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>) {</div>
+<div class="line">    ...</div>
+<div class="line">    <a class="code hl_define" href="#a87e006a00875d2e518652108f6cb5790">ASSERT</a>(PIND == 0xF0);</div>
+<div class="line">    ...</div>
+<div class="line">}</div>
+<div class="ttc" id="aassert_8h_html_a87e006a00875d2e518652108f6cb5790"><div class="ttname"><a href="#a87e006a00875d2e518652108f6cb5790">ASSERT</a></div><div class="ttdeci">#define ASSERT(expression)</div><div class="ttdoc">The macro tests the given expression.</div><div class="ttdef"><b>Definition</b> assert.h:75</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="af99dba87c80c5117e080ef0ed62eb877" name="af99dba87c80c5117e080ef0ed62eb877"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af99dba87c80c5117e080ef0ed62eb877">&#9670;&#160;</a></span>assert_na</h2>
+<a id="a87e006a00875d2e518652108f6cb5790" name="a87e006a00875d2e518652108f6cb5790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e006a00875d2e518652108f6cb5790">&#9670;&#160;</a></span>ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expression</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The macro tests the given expression. </p>
+<p>Depending on the <a class="el" href="#a442c02940502d8ec1a5e81cae6640806" title="Replaces the behavior of the ASSERT macro with the standard one.">ASSERT_USE_ABORT</a> macro, it calls standard assert() or <a class="el" href="#aef00618ac7543a53b0ba6867d39d771f" title="The assert_na() macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR...">assert_na()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expression</td><td>Expression to test for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a442c02940502d8ec1a5e81cae6640806" title="Replaces the behavior of the ASSERT macro with the standard one.">ASSERT_USE_ABORT</a> </dd>
+<dd>
+<a class="el" href="#aef00618ac7543a53b0ba6867d39d771f" title="The assert_na() macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR...">assert_na</a> </dd>
+<dd>
+<a href="https://www.nongnu.org/avr-libc/user-manual/group__avr__assert.html">https://www.nongnu.org/avr-libc/user-manual/group__avr__assert.html</a> </dd></dl>
+
+</div>
+</div>
+<a id="aef00618ac7543a53b0ba6867d39d771f" name="aef00618ac7543a53b0ba6867d39d771f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef00618ac7543a53b0ba6867d39d771f">&#9670;&#160;</a></span>assert_na</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,24 +186,40 @@ Macros</h2></td></tr>
         <tr>
           <td class="memname">#define assert_na</td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>e</em></span></td><td>)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expression</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                    ((e) ? (void)0 : \</div>
-<div class="line">                    fprintf(stderr, <span class="stringliteral">&quot;Assertion failed: (%s), function %s, file %s, line %u.\n&quot;</span>, #e, __func__ , __FILE__, __LINE__))</div>
+<b>Value:</b><div class="fragment"><div class="line">                    ((expression) ? (void)0 : \</div>
+<div class="line">                    fprintf(stderr, <span class="stringliteral">&quot;Assertion failed: (%s), function %s, file %s, line %u.\n&quot;</span>, #expression, __func__ , __FILE__, __LINE__))</div>
 </div><!-- fragment -->
-<p>The <a class="el" href="#af99dba87c80c5117e080ef0ed62eb877" title="The assert_na() macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR...">assert_na()</a> macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR definition, but don't call abort(). </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>The <a class="el" href="#aef00618ac7543a53b0ba6867d39d771f" title="The assert_na() macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR...">assert_na()</a> macro tests the given expression, like standard assert macro with __ASSERT_USE_STDERR definition, but don't call abort(). </p>
+<p>The macro may be removed at compile time by defining NDEBUG as a macro (e.g., by using the compiler option -DNDEBUG). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">expression</td><td>Expression to test for. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>See <a href="https://www.nongnu.org/avr-libc/user-manual/group__avr__assert.html">https://www.nongnu.org/avr-libc/user-manual/group__avr__assert.html</a> </dd>
-<dd>
-The macro may be removed at compile time by defining NDEBUG as a macro (e.g., by using the compiler option -DNDEBUG). </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://www.nongnu.org/avr-libc/user-manual/group__avr__assert.html">https://www.nongnu.org/avr-libc/user-manual/group__avr__assert.html</a> </dd></dl>
+
+</div>
+</div>
+<a id="a442c02940502d8ec1a5e81cae6640806" name="a442c02940502d8ec1a5e81cae6640806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a442c02940502d8ec1a5e81cae6640806">&#9670;&#160;</a></span>ASSERT_USE_ABORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_USE_ABORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replaces the behavior of the <a class="el" href="#a87e006a00875d2e518652108f6cb5790" title="The macro tests the given expression.">ASSERT</a> macro with the standard one. </p>
+<dl class="section attention"><dt>Attention</dt><dd>If the macro is defined, it also defines the __ASSERT_USE_STDERR macro. * </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a87e006a00875d2e518652108f6cb5790" title="The macro tests the given expression.">ASSERT</a> </dd></dl>
 
 </div>
 </div>

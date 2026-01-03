@@ -15,16 +15,16 @@ var defs_8h =
     [ "make_port_mask6", "defs_8h.html#abc6c07d93d9d724630765a30ed705c03", null ],
     [ "make_port_mask7", "defs_8h.html#afe2f56f772b4b3028d54940b73c99b27", null ],
     [ "make_port_mask8", "defs_8h.html#a640fef83ff0e04fdfe61de3f00450aa5", null ],
-    [ "NIBBLE_SWAP", "defs_8h.html#afbe2dc8a5129ee99e993272149ff9456", null ],
-    [ "nibble_swap", "defs_8h.html#a3c690c298393351c572736c4922b7679", null ],
+    [ "NIBBLE_SWAP", "defs_8h.html#aca2040e4629f10fad56f3350cc7dddda", null ],
     [ "pin_2_ddr", "defs_8h.html#ac44764cf3af7dea98e88e8747b32d58c", null ],
     [ "pin_2_port", "defs_8h.html#a2d3ae56a06425139066e0d7fd02abcff", null ],
     [ "port_2_ddr", "defs_8h.html#aaddf97ffd2c8b23a56eae42a1e0cc6ab", null ],
     [ "port_2_pin", "defs_8h.html#aa194acf95435cfeab49b17d05d49b741", null ],
-    [ "byte_t", "defs_8h.html#a780bd50362a995b802eb8e00f4b0c200", null ],
+    [ "byte_t", "defs_8h.html#a0661d7d1353e0bca70c64563f635b034", null ],
     [ "ddr_t", "defs_8h.html#a9e325a0a0c4eee8e9c335c3545e91056", null ],
     [ "pin_bit_t", "defs_8h.html#a43e1a51e0e88379f07142d246b04bac9", null ],
     [ "pin_t", "defs_8h.html#aae8b4f8e9d8e0f87b8a81fd49c4ee35a", null ],
     [ "port_mask_t", "defs_8h.html#aaab7d66091ebd9df827491bc88cbaebc", null ],
-    [ "port_t", "defs_8h.html#aa3d061b0d15cc4326f8f46a394570775", null ]
+    [ "port_t", "defs_8h.html#aa3d061b0d15cc4326f8f46a394570775", null ],
+    [ "nibble_swap", "defs_8h.html#a1c060ff403deead1862b3f7b52f21fbf", null ]
 ];

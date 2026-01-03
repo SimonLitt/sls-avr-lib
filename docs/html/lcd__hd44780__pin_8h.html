@@ -105,6 +105,7 @@ $(function(){initNavTree('lcd__hd44780__pin_8h.html',''); initResizable(true); }
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">lcd_hd44780_pin.h File Reference</div></div>
 </div><!--header-->
@@ -127,18 +128,15 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a9031230f1d3bedc4f69d36493406d8cb" id="r_a9031230f1d3bedc4f69d36493406d8cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb">LCD_HD44780_PIN_SINGLE_SOME_CODE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a9031230f1d3bedc4f69d36493406d8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This allows for the same code to be achieved with the macro <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> on and off.  <br /></td></tr>
+<tr class="separator:a9031230f1d3bedc4f69d36493406d8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80a56b26447e22d845c6137ad7421357" id="r_a80a56b26447e22d845c6137ad7421357"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80a56b26447e22d845c6137ad7421357">LCD_HD44780_PIN_MULTI_MODE</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:a80a56b26447e22d845c6137ad7421357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multidisplay display mode.  <br /></td></tr>
 <tr class="separator:a80a56b26447e22d845c6137ad7421357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cff45a083e198dedcad1c67cc38bd32" id="r_a6cff45a083e198dedcad1c67cc38bd32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cff45a083e198dedcad1c67cc38bd32">LCD_HD44780_PIN_DISPLAY_TYPE</a></td></tr>
-<tr class="memdesc:a6cff45a083e198dedcad1c67cc38bd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display type. One of: <a class="el" href="dm__hd44780_8h.html#ad762c8720d5a01db61057568ce29828c" title="LCD display 8x1.">HD44780_DISPLAY_8X1</a>, <a class="el" href="dm__hd44780_8h.html#a165b048d01ac4888e49cbdeee2288891" title="LCD display 16x1.">HD44780_DISPLAY_16X1</a>, <a class="el" href="dm__hd44780_8h.html#a1feafdf0aa3f31ab4db6d957632a7c78" title="LCD display 16x2.">HD44780_DISPLAY_16X2</a>, <a class="el" href="dm__hd44780_8h.html#acf9d9a363959acf5237e7fe55eb0ee8e" title="LCD display 20x2.">HD44780_DISPLAY_20X2</a>, <a class="el" href="dm__hd44780_8h.html#a72f92d5b47b8935638563fcf4bd3827a" title="LCD display 32x2.">HD44780_DISPLAY_32X2</a>, <a class="el" href="dm__hd44780_8h.html#a84ae3baa60d292ff7eb618e095560583" title="LCD display 40x2.">HD44780_DISPLAY_40X2</a>, <a class="el" href="dm__hd44780_8h.html#a6a8e532b56a7933588a1ff42ef273621" title="LCD display 16x4.">HD44780_DISPLAY_16X4</a>, <a class="el" href="dm__hd44780_8h.html#a44cc48b10e94d9cda524ae3735356d8b" title="LCD display 20x4.">HD44780_DISPLAY_20X4</a>.  <br /></td></tr>
+<tr class="memdesc:a6cff45a083e198dedcad1c67cc38bd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display type.  <br /></td></tr>
 <tr class="separator:a6cff45a083e198dedcad1c67cc38bd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a121fcd5d9d36db6ab3f2d4f6faf09a1a" id="r_a121fcd5d9d36db6ab3f2d4f6faf09a1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a>&#160;&#160;&#160;void</td></tr>
-<tr class="separator:a121fcd5d9d36db6ab3f2d4f6faf09a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae056a5c4eb6a67f20e22d2687aef4468" id="r_ae056a5c4eb6a67f20e22d2687aef4468"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae056a5c4eb6a67f20e22d2687aef4468">__LCD_MULTIMODE_ONLY_INFO_ARG</a>(_n)</td></tr>
-<tr class="separator:ae056a5c4eb6a67f20e22d2687aef4468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaecfe54c90af5aec92e04909807db5d6" id="r_aaecfe54c90af5aec92e04909807db5d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(_n)</td></tr>
-<tr class="separator:aaecfe54c90af5aec92e04909807db5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07655a9782c9de79fd8eed7ee21bfb54" id="r_a07655a9782c9de79fd8eed7ee21bfb54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07655a9782c9de79fd8eed7ee21bfb54">HD44780_INIT_IDL_4BIT</a>&#160;&#160;&#160;0x00</td></tr>
 <tr class="memdesc:a07655a9782c9de79fd8eed7ee21bfb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization with 4-bit interface data length. Ignored for single display mode.  <br /></td></tr>
 <tr class="separator:a07655a9782c9de79fd8eed7ee21bfb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,96 +186,119 @@ Macros</h2></td></tr>
 <tr class="memdesc:a2a283577da6e4c474aa66ce9e34a3291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization with the display on.  <br /></td></tr>
 <tr class="separator:a2a283577da6e4c474aa66ce9e34a3291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a511ed2d6868877588c706a6b89ed8d29" id="r_a511ed2d6868877588c706a6b89ed8d29"><td class="memItemLeft" align="right" valign="top">typedef volatile lcd_info_struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a></td></tr>
+<tr class="memdesc:a511ed2d6868877588c706a6b89ed8d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information to distinguish a specific display from several connected ones.  <br /></td></tr>
+<tr class="separator:a511ed2d6868877588c706a6b89ed8d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab78dab61fe2499513d33429ff9124ecc" id="r_ab78dab61fe2499513d33429ff9124ecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab78dab61fe2499513d33429ff9124ecc">lcd_init</a> (const <a class="el" href="structlcd__init__t.html">lcd_init_t</a> *const config)</td></tr>
-<tr class="memdesc:ab78dab61fe2499513d33429ff9124ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the display.  <br /></td></tr>
-<tr class="separator:ab78dab61fe2499513d33429ff9124ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8a0324a0dc39c7ca4703523f128dc5a" id="r_af8a0324a0dc39c7ca4703523f128dc5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8a0324a0dc39c7ca4703523f128dc5a">lcd_clear</a> (<a class="el" href="#ae056a5c4eb6a67f20e22d2687aef4468">__LCD_MULTIMODE_ONLY_INFO_ARG</a>(info))</td></tr>
-<tr class="memdesc:af8a0324a0dc39c7ca4703523f128dc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the display.  <br /></td></tr>
-<tr class="separator:af8a0324a0dc39c7ca4703523f128dc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a1cc7660b8c0d92cae2f17825a333fd" id="r_a9a1cc7660b8c0d92cae2f17825a333fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a1cc7660b8c0d92cae2f17825a333fd">lcd_home</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t flags)</td></tr>
-<tr class="memdesc:a9a1cc7660b8c0d92cae2f17825a333fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DDRAM address 0 in a ddress counter.  <br /></td></tr>
-<tr class="separator:a9a1cc7660b8c0d92cae2f17825a333fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b450559d4c3c1426ca09206080139fa" id="r_a3b450559d4c3c1426ca09206080139fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b450559d4c3c1426ca09206080139fa">lcd_entry_mode</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t flags)</td></tr>
-<tr class="memdesc:a3b450559d4c3c1426ca09206080139fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets cursor move direction and specifies display shift.  <br /></td></tr>
-<tr class="separator:a3b450559d4c3c1426ca09206080139fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f191c7ee2f90ab536eb9218f713466" id="r_a82f191c7ee2f90ab536eb9218f713466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82f191c7ee2f90ab536eb9218f713466">lcd_display_ctrl</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t flags)</td></tr>
-<tr class="memdesc:a82f191c7ee2f90ab536eb9218f713466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets diplay options.  <br /></td></tr>
-<tr class="separator:a82f191c7ee2f90ab536eb9218f713466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99fa3e8d7fc655ab075dbc0580bb9aa5" id="r_a99fa3e8d7fc655ab075dbc0580bb9aa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99fa3e8d7fc655ab075dbc0580bb9aa5">lcd_cursor</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t flags)</td></tr>
-<tr class="memdesc:a99fa3e8d7fc655ab075dbc0580bb9aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the cursor or shifts the display.  <br /></td></tr>
-<tr class="separator:a99fa3e8d7fc655ab075dbc0580bb9aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc7b4e8a70d5e396f1f7b0b27f54397c" id="r_afc7b4e8a70d5e396f1f7b0b27f54397c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc7b4e8a70d5e396f1f7b0b27f54397c">lcd_func_set</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t flags)</td></tr>
-<tr class="memdesc:afc7b4e8a70d5e396f1f7b0b27f54397c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets options.  <br /></td></tr>
-<tr class="separator:afc7b4e8a70d5e396f1f7b0b27f54397c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ec9928f2744464cde3411152439f93" id="r_aa3ec9928f2744464cde3411152439f93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3ec9928f2744464cde3411152439f93">lcd_cgr_adr</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t flags)</td></tr>
-<tr class="memdesc:aa3ec9928f2744464cde3411152439f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets CGRAM address.  <br /></td></tr>
-<tr class="separator:aa3ec9928f2744464cde3411152439f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e17509b81383cd7379aa497ce0d7353" id="r_a1e17509b81383cd7379aa497ce0d7353"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e17509b81383cd7379aa497ce0d7353">lcd_ddr_adr</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t flags)</td></tr>
-<tr class="memdesc:a1e17509b81383cd7379aa497ce0d7353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DDRAM address.  <br /></td></tr>
-<tr class="separator:a1e17509b81383cd7379aa497ce0d7353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96d463fe9c5e2a2fbac102cf12abd68e" id="r_a96d463fe9c5e2a2fbac102cf12abd68e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96d463fe9c5e2a2fbac102cf12abd68e">lcd_set_pos</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const <a class="el" href="dm__hd44780_8h.html#a4c5d52ee693f6330daece942b29abfa8">lcd_line_t</a> line, const uint8_t pos)</td></tr>
-<tr class="memdesc:a96d463fe9c5e2a2fbac102cf12abd68e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DDRAM address to a given position.  <br /></td></tr>
-<tr class="separator:a96d463fe9c5e2a2fbac102cf12abd68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ebf1918430695795a9ac48e8176bcc" id="r_a35ebf1918430695795a9ac48e8176bcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35ebf1918430695795a9ac48e8176bcc">lcd_byte</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const <a class="el" href="defs_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> ch)</td></tr>
-<tr class="memdesc:a35ebf1918430695795a9ac48e8176bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a symbol.  <br /></td></tr>
-<tr class="separator:a35ebf1918430695795a9ac48e8176bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8907e09e530b16e4ca00bda4e1ebea82" id="r_a8907e09e530b16e4ca00bda4e1ebea82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8907e09e530b16e4ca00bda4e1ebea82">lcd_line</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const char str[], const <a class="el" href="dm__hd44780_8h.html#a4c5d52ee693f6330daece942b29abfa8">lcd_line_t</a> line, const uint8_t start_pos)</td></tr>
-<tr class="memdesc:a8907e09e530b16e4ca00bda4e1ebea82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a string on entry line.  <br /></td></tr>
-<tr class="separator:a8907e09e530b16e4ca00bda4e1ebea82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394c22eb0313f5ee541d935ebac3e40c" id="r_a394c22eb0313f5ee541d935ebac3e40c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a394c22eb0313f5ee541d935ebac3e40c">lcd_print</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const char str[])</td></tr>
-<tr class="memdesc:a394c22eb0313f5ee541d935ebac3e40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a string to buffer.  <br /></td></tr>
-<tr class="separator:a394c22eb0313f5ee541d935ebac3e40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa77244422ed054fbdaf2164af4d27f54" id="r_aa77244422ed054fbdaf2164af4d27f54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa77244422ed054fbdaf2164af4d27f54">lcd_refresh_ml</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const char str[])</td></tr>
-<tr class="memdesc:aa77244422ed054fbdaf2164af4d27f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a string on all lines.  <br /></td></tr>
-<tr class="separator:aa77244422ed054fbdaf2164af4d27f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83f3fe6cc384304f574fffc2a0dc2115" id="r_a83f3fe6cc384304f574fffc2a0dc2115"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83f3fe6cc384304f574fffc2a0dc2115">lcd_custom_char</a> (<a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const <a class="el" href="defs_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> char_pos, const <a class="el" href="defs_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> custom_char[8])</td></tr>
-<tr class="memdesc:a83f3fe6cc384304f574fffc2a0dc2115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a custom symbol.  <br /></td></tr>
-<tr class="separator:a83f3fe6cc384304f574fffc2a0dc2115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6095878836a9fa28917bfef5cd4c3c2" id="r_ae6095878836a9fa28917bfef5cd4c3c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6095878836a9fa28917bfef5cd4c3c2">lcd_init</a> (const <a class="el" href="structlcd__init__t.html">lcd_init_t</a> *const config)</td></tr>
+<tr class="memdesc:ae6095878836a9fa28917bfef5cd4c3c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the display.  <br /></td></tr>
+<tr class="separator:ae6095878836a9fa28917bfef5cd4c3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b69be28bc1f737129876b3fe925752" id="r_af9b69be28bc1f737129876b3fe925752"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9b69be28bc1f737129876b3fe925752">lcd_clear</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info)</td></tr>
+<tr class="memdesc:af9b69be28bc1f737129876b3fe925752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the display.  <br /></td></tr>
+<tr class="separator:af9b69be28bc1f737129876b3fe925752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71b200c6c839961e6002126f3bf6221" id="r_ae71b200c6c839961e6002126f3bf6221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae71b200c6c839961e6002126f3bf6221">lcd_home</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const uint8_t flags)</td></tr>
+<tr class="memdesc:ae71b200c6c839961e6002126f3bf6221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DDRAM address 0 in a ddress counter.  <br /></td></tr>
+<tr class="separator:ae71b200c6c839961e6002126f3bf6221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f09f9af9edd50589ccab60f51a21c76" id="r_a1f09f9af9edd50589ccab60f51a21c76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f09f9af9edd50589ccab60f51a21c76">lcd_entry_mode</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const uint8_t flags)</td></tr>
+<tr class="memdesc:a1f09f9af9edd50589ccab60f51a21c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets cursor move direction and specifies display shift.  <br /></td></tr>
+<tr class="separator:a1f09f9af9edd50589ccab60f51a21c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabde3e56512616d2af33cb6d770d59d9" id="r_aabde3e56512616d2af33cb6d770d59d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabde3e56512616d2af33cb6d770d59d9">lcd_display_ctrl</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const uint8_t flags)</td></tr>
+<tr class="memdesc:aabde3e56512616d2af33cb6d770d59d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets diplay options.  <br /></td></tr>
+<tr class="separator:aabde3e56512616d2af33cb6d770d59d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b2811ddb06a23f2328ebaae6ff25a1" id="r_a59b2811ddb06a23f2328ebaae6ff25a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59b2811ddb06a23f2328ebaae6ff25a1">lcd_cursor</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const uint8_t flags)</td></tr>
+<tr class="memdesc:a59b2811ddb06a23f2328ebaae6ff25a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the cursor or shifts the display.  <br /></td></tr>
+<tr class="separator:a59b2811ddb06a23f2328ebaae6ff25a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c54272869aaede2a227a0452a40f62" id="r_a16c54272869aaede2a227a0452a40f62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16c54272869aaede2a227a0452a40f62">lcd_func_set</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const uint8_t flags)</td></tr>
+<tr class="memdesc:a16c54272869aaede2a227a0452a40f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets options.  <br /></td></tr>
+<tr class="separator:a16c54272869aaede2a227a0452a40f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f342609f4a8a19d6f71debd941a6cfe" id="r_a6f342609f4a8a19d6f71debd941a6cfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f342609f4a8a19d6f71debd941a6cfe">lcd_cgr_adr</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const uint8_t flags)</td></tr>
+<tr class="memdesc:a6f342609f4a8a19d6f71debd941a6cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets CGRAM address.  <br /></td></tr>
+<tr class="separator:a6f342609f4a8a19d6f71debd941a6cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c4a0e600f9f833880bb64eb93deed1" id="r_a34c4a0e600f9f833880bb64eb93deed1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34c4a0e600f9f833880bb64eb93deed1">lcd_ddr_adr</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const uint8_t flags)</td></tr>
+<tr class="memdesc:a34c4a0e600f9f833880bb64eb93deed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DDRAM address.  <br /></td></tr>
+<tr class="separator:a34c4a0e600f9f833880bb64eb93deed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69ec9567952ecbf9c5d4b12ec0d2b6f" id="r_ad69ec9567952ecbf9c5d4b12ec0d2b6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad69ec9567952ecbf9c5d4b12ec0d2b6f">lcd_set_pos</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const <a class="el" href="dm__hd44780_8h.html#a4c5d52ee693f6330daece942b29abfa8">lcd_line_t</a> line, const uint8_t pos)</td></tr>
+<tr class="memdesc:ad69ec9567952ecbf9c5d4b12ec0d2b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DDRAM address to a given position.  <br /></td></tr>
+<tr class="separator:ad69ec9567952ecbf9c5d4b12ec0d2b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a25f572b40ad569a967b4a3ca0f4ad7" id="r_a0a25f572b40ad569a967b4a3ca0f4ad7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a25f572b40ad569a967b4a3ca0f4ad7">lcd_byte</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const <a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a> ch)</td></tr>
+<tr class="memdesc:a0a25f572b40ad569a967b4a3ca0f4ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a symbol.  <br /></td></tr>
+<tr class="separator:a0a25f572b40ad569a967b4a3ca0f4ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f62ce5f34e89c739b9758ead300412c" id="r_a5f62ce5f34e89c739b9758ead300412c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f62ce5f34e89c739b9758ead300412c">lcd_line</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const char str[], const <a class="el" href="dm__hd44780_8h.html#a4c5d52ee693f6330daece942b29abfa8">lcd_line_t</a> line, const uint8_t start_pos)</td></tr>
+<tr class="memdesc:a5f62ce5f34e89c739b9758ead300412c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a string on entry line.  <br /></td></tr>
+<tr class="separator:a5f62ce5f34e89c739b9758ead300412c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3885368c68cc3428384334e9762ef58" id="r_ab3885368c68cc3428384334e9762ef58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3885368c68cc3428384334e9762ef58">lcd_print</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const char str[])</td></tr>
+<tr class="memdesc:ab3885368c68cc3428384334e9762ef58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a string to buffer.  <br /></td></tr>
+<tr class="separator:ab3885368c68cc3428384334e9762ef58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61bac38715de94c070df5a5e89e4193" id="r_af61bac38715de94c070df5a5e89e4193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af61bac38715de94c070df5a5e89e4193">lcd_refresh_ml</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const char str[])</td></tr>
+<tr class="memdesc:af61bac38715de94c070df5a5e89e4193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a string on all lines.  <br /></td></tr>
+<tr class="separator:af61bac38715de94c070df5a5e89e4193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355b0fd64572d167c6bcdaaa18a7b729" id="r_a355b0fd64572d167c6bcdaaa18a7b729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a355b0fd64572d167c6bcdaaa18a7b729">lcd_custom_char</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info, const <a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a> char_pos, const <a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a> custom_char[8])</td></tr>
+<tr class="memdesc:a355b0fd64572d167c6bcdaaa18a7b729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a custom symbol.  <br /></td></tr>
+<tr class="separator:a355b0fd64572d167c6bcdaaa18a7b729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac791792409712febd6a6bd76a16417" id="r_a3ac791792409712febd6a6bd76a16417"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ac791792409712febd6a6bd76a16417">lcd_read_busy_and_addr</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info)</td></tr>
+<tr class="memdesc:a3ac791792409712febd6a6bd76a16417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until display is buisy and returns address counter contents.  <br /></td></tr>
+<tr class="separator:a3ac791792409712febd6a6bd76a16417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a8645c2f2a4e787bb3d8670e6a55c8" id="r_a87a8645c2f2a4e787bb3d8670e6a55c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87a8645c2f2a4e787bb3d8670e6a55c8">lcd_read_data</a> (const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const info)</td></tr>
+<tr class="memdesc:a87a8645c2f2a4e787bb3d8670e6a55c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from CGRAM or from DDRAM.  <br /></td></tr>
+<tr class="separator:a87a8645c2f2a4e787bb3d8670e6a55c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad235a86241458b1e7b8771688bfdaf9a" id="r_ad235a86241458b1e7b8771688bfdaf9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad235a86241458b1e7b8771688bfdaf9a">lcd_clear</a> (void)</td></tr>
+<tr class="memdesc:ad235a86241458b1e7b8771688bfdaf9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the display.  <br /></td></tr>
+<tr class="separator:ad235a86241458b1e7b8771688bfdaf9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a85432ccf5f17dfdf96b7c65c24f496" id="r_a5a85432ccf5f17dfdf96b7c65c24f496"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a85432ccf5f17dfdf96b7c65c24f496">lcd_home</a> (const uint8_t flags)</td></tr>
+<tr class="memdesc:a5a85432ccf5f17dfdf96b7c65c24f496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DDRAM address 0 in a ddress counter.  <br /></td></tr>
+<tr class="separator:a5a85432ccf5f17dfdf96b7c65c24f496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5879a4b3dde0296505c776a32e6c07" id="r_a7d5879a4b3dde0296505c776a32e6c07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d5879a4b3dde0296505c776a32e6c07">lcd_entry_mode</a> (const uint8_t flags)</td></tr>
+<tr class="memdesc:a7d5879a4b3dde0296505c776a32e6c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets cursor move direction and specifies display shift.  <br /></td></tr>
+<tr class="separator:a7d5879a4b3dde0296505c776a32e6c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb25ab2924dab71205de035f40041e90" id="r_adb25ab2924dab71205de035f40041e90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb25ab2924dab71205de035f40041e90">lcd_display_ctrl</a> (const uint8_t flags)</td></tr>
+<tr class="memdesc:adb25ab2924dab71205de035f40041e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets diplay options.  <br /></td></tr>
+<tr class="separator:adb25ab2924dab71205de035f40041e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f75e27b0c47d6bbd482b9a4eb934603" id="r_a1f75e27b0c47d6bbd482b9a4eb934603"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f75e27b0c47d6bbd482b9a4eb934603">lcd_cursor</a> (const uint8_t flags)</td></tr>
+<tr class="memdesc:a1f75e27b0c47d6bbd482b9a4eb934603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the cursor or shifts the display.  <br /></td></tr>
+<tr class="separator:a1f75e27b0c47d6bbd482b9a4eb934603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affba5d6e89c33657a787faf53333d675" id="r_affba5d6e89c33657a787faf53333d675"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affba5d6e89c33657a787faf53333d675">lcd_func_set</a> (const uint8_t flags)</td></tr>
+<tr class="memdesc:affba5d6e89c33657a787faf53333d675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets options.  <br /></td></tr>
+<tr class="separator:affba5d6e89c33657a787faf53333d675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595a02b87ba8432dd8c128bbfe05a539" id="r_a595a02b87ba8432dd8c128bbfe05a539"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a595a02b87ba8432dd8c128bbfe05a539">lcd_cgr_adr</a> (const uint8_t flags)</td></tr>
+<tr class="memdesc:a595a02b87ba8432dd8c128bbfe05a539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets CGRAM address.  <br /></td></tr>
+<tr class="separator:a595a02b87ba8432dd8c128bbfe05a539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f74f1d69c90a18465f8c3bd1b12c3ab" id="r_a9f74f1d69c90a18465f8c3bd1b12c3ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f74f1d69c90a18465f8c3bd1b12c3ab">lcd_ddr_adr</a> (const uint8_t flags)</td></tr>
+<tr class="memdesc:a9f74f1d69c90a18465f8c3bd1b12c3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DDRAM address.  <br /></td></tr>
+<tr class="separator:a9f74f1d69c90a18465f8c3bd1b12c3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000f85ed44ec75b54c3896f1f9ae0ec3" id="r_a000f85ed44ec75b54c3896f1f9ae0ec3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a000f85ed44ec75b54c3896f1f9ae0ec3">lcd_set_pos</a> (const <a class="el" href="dm__hd44780_8h.html#a4c5d52ee693f6330daece942b29abfa8">lcd_line_t</a> line, const uint8_t pos)</td></tr>
+<tr class="memdesc:a000f85ed44ec75b54c3896f1f9ae0ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DDRAM address to a given position.  <br /></td></tr>
+<tr class="separator:a000f85ed44ec75b54c3896f1f9ae0ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af89e0c11cb43058d00fa335c84c75b" id="r_a5af89e0c11cb43058d00fa335c84c75b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5af89e0c11cb43058d00fa335c84c75b">lcd_byte</a> (const <a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a> ch)</td></tr>
+<tr class="memdesc:a5af89e0c11cb43058d00fa335c84c75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a symbol.  <br /></td></tr>
+<tr class="separator:a5af89e0c11cb43058d00fa335c84c75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20044309b645ee5a42ecabcec4ec1a5a" id="r_a20044309b645ee5a42ecabcec4ec1a5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20044309b645ee5a42ecabcec4ec1a5a">lcd_line</a> (const char str[], const <a class="el" href="dm__hd44780_8h.html#a4c5d52ee693f6330daece942b29abfa8">lcd_line_t</a> line, const uint8_t start_pos)</td></tr>
+<tr class="memdesc:a20044309b645ee5a42ecabcec4ec1a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a string on entry line.  <br /></td></tr>
+<tr class="separator:a20044309b645ee5a42ecabcec4ec1a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e9f62e0e90541adcdb83f79783af22" id="r_a01e9f62e0e90541adcdb83f79783af22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01e9f62e0e90541adcdb83f79783af22">lcd_print</a> (const char str[])</td></tr>
+<tr class="memdesc:a01e9f62e0e90541adcdb83f79783af22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a string to buffer.  <br /></td></tr>
+<tr class="separator:a01e9f62e0e90541adcdb83f79783af22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d9564f6a160ff8784d2b4c1047a2e0" id="r_a85d9564f6a160ff8784d2b4c1047a2e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85d9564f6a160ff8784d2b4c1047a2e0">lcd_refresh_ml</a> (const char str[])</td></tr>
+<tr class="memdesc:a85d9564f6a160ff8784d2b4c1047a2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a string on all lines.  <br /></td></tr>
+<tr class="separator:a85d9564f6a160ff8784d2b4c1047a2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27adf4e58f28ce91c8033149bac5846" id="r_ae27adf4e58f28ce91c8033149bac5846"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae27adf4e58f28ce91c8033149bac5846">lcd_read_busy_and_addr</a> ()</td></tr>
+<tr class="memdesc:ae27adf4e58f28ce91c8033149bac5846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until display is buisy and returns address counter contents.  <br /></td></tr>
+<tr class="separator:ae27adf4e58f28ce91c8033149bac5846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8451ab51f6a435e2b7864e47d9f7b2df" id="r_a8451ab51f6a435e2b7864e47d9f7b2df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8451ab51f6a435e2b7864e47d9f7b2df">lcd_read_data</a> ()</td></tr>
+<tr class="memdesc:a8451ab51f6a435e2b7864e47d9f7b2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from CGRAM or from DDRAM.  <br /></td></tr>
+<tr class="separator:a8451ab51f6a435e2b7864e47d9f7b2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The dot-matrix liquid crystal display lib for HD44780 compatible controller, connected by 6, 7, 10 or 11 pins. </p>
-<dl class="section author"><dt>Author</dt><dd>Simon Litt </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Simon Litt <a href="#" onclick="location.href='mai'+'lto:'+'sim'+'on'+'@1i'+'tt'+'.ne'+'t'; return false;">simon<span class="obfuscator">.nosp@m.</span>@1it<span class="obfuscator">.nosp@m.</span>t.net</a> <a href="https://coding.1itt.net">https://coding.1itt.net</a>, <a href="https://github.com/SimonLitt">https://github.com/SimonLitt</a> </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>GNU General Public License v3.0</dd></dl>
+<p>For a 4-bit interface, the data bus connection pins should be connected in series; for an 8-bit interface, the data bus should occupy the entire port. The remaining 2 or 3 pins can be selected separately.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="lcd__hd44780__pin_8h.html">sls-avr/lcd_hd44780_pin.h</a>&gt;</span></div>
 <div class="ttc" id="alcd__hd44780__pin_8h_html"><div class="ttname"><a href="lcd__hd44780__pin_8h.html">lcd_hd44780_pin.h</a></div><div class="ttdoc">The dot-matrix liquid crystal display lib for HD44780 compatible controller, connected by 6,...</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ae056a5c4eb6a67f20e22d2687aef4468" name="ae056a5c4eb6a67f20e22d2687aef4468"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae056a5c4eb6a67f20e22d2687aef4468">&#9670;&#160;</a></span>__LCD_MULTIMODE_ONLY_INFO_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define __LCD_MULTIMODE_ONLY_INFO_ARG</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_n</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aaecfe54c90af5aec92e04909807db5d6" name="aaecfe54c90af5aec92e04909807db5d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaecfe54c90af5aec92e04909807db5d6">&#9670;&#160;</a></span>__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define __LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_n</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a26bfc17ecb94f4df193a727962f86211" name="a26bfc17ecb94f4df193a727962f86211"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26bfc17ecb94f4df193a727962f86211">&#9670;&#160;</a></span>HD44780_INIT_BLINKING_OFF</h2>
 
@@ -546,7 +567,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Display type. One of: <a class="el" href="dm__hd44780_8h.html#ad762c8720d5a01db61057568ce29828c" title="LCD display 8x1.">HD44780_DISPLAY_8X1</a>, <a class="el" href="dm__hd44780_8h.html#a165b048d01ac4888e49cbdeee2288891" title="LCD display 16x1.">HD44780_DISPLAY_16X1</a>, <a class="el" href="dm__hd44780_8h.html#a1feafdf0aa3f31ab4db6d957632a7c78" title="LCD display 16x2.">HD44780_DISPLAY_16X2</a>, <a class="el" href="dm__hd44780_8h.html#acf9d9a363959acf5237e7fe55eb0ee8e" title="LCD display 20x2.">HD44780_DISPLAY_20X2</a>, <a class="el" href="dm__hd44780_8h.html#a72f92d5b47b8935638563fcf4bd3827a" title="LCD display 32x2.">HD44780_DISPLAY_32X2</a>, <a class="el" href="dm__hd44780_8h.html#a84ae3baa60d292ff7eb618e095560583" title="LCD display 40x2.">HD44780_DISPLAY_40X2</a>, <a class="el" href="dm__hd44780_8h.html#a6a8e532b56a7933588a1ff42ef273621" title="LCD display 16x4.">HD44780_DISPLAY_16X4</a>, <a class="el" href="dm__hd44780_8h.html#a44cc48b10e94d9cda524ae3735356d8b" title="LCD display 20x4.">HD44780_DISPLAY_20X4</a>. </p>
+<p>Display type. </p>
+<p>One of: <a class="el" href="dm__hd44780_8h.html#ad762c8720d5a01db61057568ce29828c" title="LCD display 8x1.">HD44780_DISPLAY_8X1</a>, <a class="el" href="dm__hd44780_8h.html#a165b048d01ac4888e49cbdeee2288891" title="LCD display 16x1.">HD44780_DISPLAY_16X1</a>, <a class="el" href="dm__hd44780_8h.html#a1feafdf0aa3f31ab4db6d957632a7c78" title="LCD display 16x2.">HD44780_DISPLAY_16X2</a>, <a class="el" href="dm__hd44780_8h.html#acf9d9a363959acf5237e7fe55eb0ee8e" title="LCD display 20x2.">HD44780_DISPLAY_20X2</a>, <a class="el" href="dm__hd44780_8h.html#a72f92d5b47b8935638563fcf4bd3827a" title="LCD display 32x2.">HD44780_DISPLAY_32X2</a>, <a class="el" href="dm__hd44780_8h.html#a84ae3baa60d292ff7eb618e095560583" title="LCD display 40x2.">HD44780_DISPLAY_40X2</a>, <a class="el" href="dm__hd44780_8h.html#a6a8e532b56a7933588a1ff42ef273621" title="LCD display 16x4.">HD44780_DISPLAY_16X4</a>, <a class="el" href="dm__hd44780_8h.html#a44cc48b10e94d9cda524ae3735356d8b" title="LCD display 20x4.">HD44780_DISPLAY_20X4</a>. </p>
 
 </div>
 </div>
@@ -566,23 +588,43 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a121fcd5d9d36db6ab3f2d4f6faf09a1a" name="a121fcd5d9d36db6ab3f2d4f6faf09a1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">&#9670;&#160;</a></span>lcd_info_t</h2>
+<a id="a9031230f1d3bedc4f69d36493406d8cb" name="a9031230f1d3bedc4f69d36493406d8cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9031230f1d3bedc4f69d36493406d8cb">&#9670;&#160;</a></span>LCD_HD44780_PIN_SINGLE_SOME_CODE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lcd_info_t&#160;&#160;&#160;void</td>
+          <td class="memname">#define LCD_HD44780_PIN_SINGLE_SOME_CODE&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>This allows for the same code to be achieved with the macro <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> on and off. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a511ed2d6868877588c706a6b89ed8d29" name="a511ed2d6868877588c706a6b89ed8d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a511ed2d6868877588c706a6b89ed8d29">&#9670;&#160;</a></span>lcd_info_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef volatile lcd_info_struct <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Information to distinguish a specific display from several connected ones. </p>
+<p>This parameter is set during LCD initialization and should not be changed manually later. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a35ebf1918430695795a9ac48e8176bcc" name="a35ebf1918430695795a9ac48e8176bcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35ebf1918430695795a9ac48e8176bcc">&#9670;&#160;</a></span>lcd_byte()</h2>
+<a id="a5af89e0c11cb43058d00fa335c84c75b" name="a5af89e0c11cb43058d00fa335c84c75b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af89e0c11cb43058d00fa335c84c75b">&#9670;&#160;</a></span>lcd_byte() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -590,7 +632,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_byte </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const <a class="el" href="defs_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -599,7 +641,6 @@ Functions</h2></td></tr>
 <p>Outputs a symbol. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">ch</td><td>Symbol code </td></tr>
   </table>
   </dd>
@@ -607,8 +648,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa3ec9928f2744464cde3411152439f93" name="aa3ec9928f2744464cde3411152439f93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3ec9928f2744464cde3411152439f93">&#9670;&#160;</a></span>lcd_cgr_adr()</h2>
+<a id="a0a25f572b40ad569a967b4a3ca0f4ad7" name="a0a25f572b40ad569a967b4a3ca0f4ad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a25f572b40ad569a967b4a3ca0f4ad7">&#9670;&#160;</a></span>lcd_byte() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_byte </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a></td>          <td class="paramname"><span class="paramname"><em>ch</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Outputs a symbol. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">ch</td><td>Symbol code </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f342609f4a8a19d6f71debd941a6cfe" name="a6f342609f4a8a19d6f71debd941a6cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f342609f4a8a19d6f71debd941a6cfe">&#9670;&#160;</a></span>lcd_cgr_adr() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -616,7 +687,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_cgr_adr </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets CGRAM address. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">flags</td><td>CGRAM address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a595a02b87ba8432dd8c128bbfe05a539" name="a595a02b87ba8432dd8c128bbfe05a539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595a02b87ba8432dd8c128bbfe05a539">&#9670;&#160;</a></span>lcd_cgr_adr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_cgr_adr </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -625,7 +726,6 @@ Functions</h2></td></tr>
 <p>Sets CGRAM address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">flags</td><td>CGRAM address </td></tr>
   </table>
   </dd>
@@ -633,8 +733,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af8a0324a0dc39c7ca4703523f128dc5a" name="af8a0324a0dc39c7ca4703523f128dc5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8a0324a0dc39c7ca4703523f128dc5a">&#9670;&#160;</a></span>lcd_clear()</h2>
+<a id="af9b69be28bc1f737129876b3fe925752" name="af9b69be28bc1f737129876b3fe925752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b69be28bc1f737129876b3fe925752">&#9670;&#160;</a></span>lcd_clear() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -642,24 +742,43 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_clear </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#ae056a5c4eb6a67f20e22d2687aef4468">__LCD_MULTIMODE_ONLY_INFO_ARG</a>(info)</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Clears the display. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a99fa3e8d7fc655ab075dbc0580bb9aa5" name="a99fa3e8d7fc655ab075dbc0580bb9aa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99fa3e8d7fc655ab075dbc0580bb9aa5">&#9670;&#160;</a></span>lcd_cursor()</h2>
+<a id="ad235a86241458b1e7b8771688bfdaf9a" name="ad235a86241458b1e7b8771688bfdaf9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad235a86241458b1e7b8771688bfdaf9a">&#9670;&#160;</a></span>lcd_clear() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_clear </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears the display. </p>
+
+</div>
+</div>
+<a id="a59b2811ddb06a23f2328ebaae6ff25a1" name="a59b2811ddb06a23f2328ebaae6ff25a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b2811ddb06a23f2328ebaae6ff25a1">&#9670;&#160;</a></span>lcd_cursor() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -667,7 +786,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_cursor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves the cursor or shifts the display. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">flags</td><td>Options flags </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f75e27b0c47d6bbd482b9a4eb934603" name="a1f75e27b0c47d6bbd482b9a4eb934603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f75e27b0c47d6bbd482b9a4eb934603">&#9670;&#160;</a></span>lcd_cursor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_cursor </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -676,7 +825,6 @@ Functions</h2></td></tr>
 <p>Moves the cursor or shifts the display. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">flags</td><td>Options flags </td></tr>
   </table>
   </dd>
@@ -684,8 +832,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a83f3fe6cc384304f574fffc2a0dc2115" name="a83f3fe6cc384304f574fffc2a0dc2115"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83f3fe6cc384304f574fffc2a0dc2115">&#9670;&#160;</a></span>lcd_custom_char()</h2>
+<a id="a355b0fd64572d167c6bcdaaa18a7b729" name="a355b0fd64572d167c6bcdaaa18a7b729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a355b0fd64572d167c6bcdaaa18a7b729">&#9670;&#160;</a></span>lcd_custom_char()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -693,31 +841,36 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_custom_char </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const <a class="el" href="defs_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a></td>          <td class="paramname"><span class="paramname"><em>char_pos</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="defs_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a></td>          <td class="paramname"><span class="paramname"><em>custom_char</em></span>[8]&#160;)</td>
+          <td class="paramtype">const <a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a></td>          <td class="paramname"><span class="paramname"><em>char_pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a></td>          <td class="paramname"><span class="paramname"><em>custom_char</em></span>[8]&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Creates a custom symbol. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">char_pos</td><td>Char position 0-7. </td></tr>
     <tr><td class="paramname">custom_char</td><td>8-byte array with symbol information. </td></tr>
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Once executed, no output will be possible until the DDRAM address is set. The DDRAM address can be set using the following methods: <a class="el" href="#a1e17509b81383cd7379aa497ce0d7353" title="Sets DDRAM address.">lcd_ddr_adr()</a>, <a class="el" href="#a96d463fe9c5e2a2fbac102cf12abd68e" title="Sets DDRAM address to a given position.">lcd_set_pos()</a> and <a class="el" href="#af8a0324a0dc39c7ca4703523f128dc5a" title="Clears the display.">lcd_clear()</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Once executed, no output will be possible until the DDRAM address is set. The DDRAM address can be set using the following methods: <a class="el" href="#a34c4a0e600f9f833880bb64eb93deed1" title="Sets DDRAM address.">lcd_ddr_adr()</a>, <a class="el" href="#ad69ec9567952ecbf9c5d4b12ec0d2b6f" title="Sets DDRAM address to a given position.">lcd_set_pos()</a> and <a class="el" href="#ad235a86241458b1e7b8771688bfdaf9a" title="Clears the display.">lcd_clear()</a>. </dd></dl>
 
 </div>
 </div>
-<a id="a1e17509b81383cd7379aa497ce0d7353" name="a1e17509b81383cd7379aa497ce0d7353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e17509b81383cd7379aa497ce0d7353">&#9670;&#160;</a></span>lcd_ddr_adr()</h2>
+<a id="a34c4a0e600f9f833880bb64eb93deed1" name="a34c4a0e600f9f833880bb64eb93deed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c4a0e600f9f833880bb64eb93deed1">&#9670;&#160;</a></span>lcd_ddr_adr() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -725,7 +878,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_ddr_adr </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets DDRAM address. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">flags</td><td>DDRAM address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9f74f1d69c90a18465f8c3bd1b12c3ab" name="a9f74f1d69c90a18465f8c3bd1b12c3ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f74f1d69c90a18465f8c3bd1b12c3ab">&#9670;&#160;</a></span>lcd_ddr_adr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_ddr_adr </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -734,7 +917,6 @@ Functions</h2></td></tr>
 <p>Sets DDRAM address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">flags</td><td>DDRAM address </td></tr>
   </table>
   </dd>
@@ -742,8 +924,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a82f191c7ee2f90ab536eb9218f713466" name="a82f191c7ee2f90ab536eb9218f713466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82f191c7ee2f90ab536eb9218f713466">&#9670;&#160;</a></span>lcd_display_ctrl()</h2>
+<a id="aabde3e56512616d2af33cb6d770d59d9" name="aabde3e56512616d2af33cb6d770d59d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabde3e56512616d2af33cb6d770d59d9">&#9670;&#160;</a></span>lcd_display_ctrl() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -751,7 +933,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_display_ctrl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets diplay options. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">flags</td><td>Options flags </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb25ab2924dab71205de035f40041e90" name="adb25ab2924dab71205de035f40041e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb25ab2924dab71205de035f40041e90">&#9670;&#160;</a></span>lcd_display_ctrl() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_display_ctrl </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -760,7 +972,6 @@ Functions</h2></td></tr>
 <p>Sets diplay options. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">flags</td><td>Options flags </td></tr>
   </table>
   </dd>
@@ -768,8 +979,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b450559d4c3c1426ca09206080139fa" name="a3b450559d4c3c1426ca09206080139fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b450559d4c3c1426ca09206080139fa">&#9670;&#160;</a></span>lcd_entry_mode()</h2>
+<a id="a1f09f9af9edd50589ccab60f51a21c76" name="a1f09f9af9edd50589ccab60f51a21c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f09f9af9edd50589ccab60f51a21c76">&#9670;&#160;</a></span>lcd_entry_mode() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -777,7 +988,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_entry_mode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets cursor move direction and specifies display shift. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">flags</td><td>Options flags </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d5879a4b3dde0296505c776a32e6c07" name="a7d5879a4b3dde0296505c776a32e6c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5879a4b3dde0296505c776a32e6c07">&#9670;&#160;</a></span>lcd_entry_mode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_entry_mode </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -786,7 +1027,6 @@ Functions</h2></td></tr>
 <p>Sets cursor move direction and specifies display shift. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">flags</td><td>Options flags </td></tr>
   </table>
   </dd>
@@ -794,8 +1034,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afc7b4e8a70d5e396f1f7b0b27f54397c" name="afc7b4e8a70d5e396f1f7b0b27f54397c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc7b4e8a70d5e396f1f7b0b27f54397c">&#9670;&#160;</a></span>lcd_func_set()</h2>
+<a id="a16c54272869aaede2a227a0452a40f62" name="a16c54272869aaede2a227a0452a40f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16c54272869aaede2a227a0452a40f62">&#9670;&#160;</a></span>lcd_func_set() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -803,7 +1043,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_func_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets options. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">flags</td><td>Options flags </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="affba5d6e89c33657a787faf53333d675" name="affba5d6e89c33657a787faf53333d675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affba5d6e89c33657a787faf53333d675">&#9670;&#160;</a></span>lcd_func_set() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_func_set </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -812,7 +1082,6 @@ Functions</h2></td></tr>
 <p>Sets options. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">flags</td><td>Options flags </td></tr>
   </table>
   </dd>
@@ -820,8 +1089,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9a1cc7660b8c0d92cae2f17825a333fd" name="a9a1cc7660b8c0d92cae2f17825a333fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a1cc7660b8c0d92cae2f17825a333fd">&#9670;&#160;</a></span>lcd_home()</h2>
+<a id="ae71b200c6c839961e6002126f3bf6221" name="ae71b200c6c839961e6002126f3bf6221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71b200c6c839961e6002126f3bf6221">&#9670;&#160;</a></span>lcd_home() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -829,7 +1098,40 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_home </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets DDRAM address 0 in a ddress counter. </p>
+<ul>
+<li>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">flags</td><td>Options flags </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a5a85432ccf5f17dfdf96b7c65c24f496" name="a5a85432ccf5f17dfdf96b7c65c24f496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a85432ccf5f17dfdf96b7c65c24f496">&#9670;&#160;</a></span>lcd_home() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_home </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -838,7 +1140,6 @@ Functions</h2></td></tr>
 <p>Sets DDRAM address 0 in a ddress counter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">flags</td><td>Options flags </td></tr>
   </table>
   </dd>
@@ -846,14 +1147,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab78dab61fe2499513d33429ff9124ecc" name="ab78dab61fe2499513d33429ff9124ecc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab78dab61fe2499513d33429ff9124ecc">&#9670;&#160;</a></span>lcd_init()</h2>
+<a id="ae6095878836a9fa28917bfef5cd4c3c2" name="ae6095878836a9fa28917bfef5cd4c3c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6095878836a9fa28917bfef5cd4c3c2">&#9670;&#160;</a></span>lcd_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> lcd_init </td>
+          <td class="memname">void lcd_init </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structlcd__init__t.html">lcd_init_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
           <td></td>
@@ -862,18 +1163,28 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the display. </p>
+<h1><a class="anchor" id="multi"></a>
+lcd_info_t lcd_init(const lcd_init_t *const config)</h1>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td><a class="el" href="structlcd__init__t.html" title="Initialization information.">lcd_init_t</a> structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> structure. Should be used for further access to the same display.</dd></dl>
+<h1><a class="anchor" id="single"></a>
+void lcd_init(const lcd_init_t *const config)</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">config</td><td><a class="el" href="structlcd__init__t.html" title="Initialization information.">lcd_init_t</a> structure </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> structure. Multidisplay mode only. Should be used for further access to the same display. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </dd></dl>
 
 </div>
 </div>
-<a id="a8907e09e530b16e4ca00bda4e1ebea82" name="a8907e09e530b16e4ca00bda4e1ebea82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8907e09e530b16e4ca00bda4e1ebea82">&#9670;&#160;</a></span>lcd_line()</h2>
+<a id="a20044309b645ee5a42ecabcec4ec1a5a" name="a20044309b645ee5a42ecabcec4ec1a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20044309b645ee5a42ecabcec4ec1a5a">&#9670;&#160;</a></span>lcd_line() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -881,7 +1192,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_line </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const char</td>          <td class="paramname"><span class="paramname"><em>str</em></span>[], </td>
+          <td class="paramtype">const char</td>          <td class="paramname"><span class="paramname"><em>str</em></span>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -899,18 +1210,59 @@ Functions</h2></td></tr>
 <p>Outputs a string on entry line. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">str</td><td>A string </td></tr>
     <tr><td class="paramname">line</td><td>Display row </td></tr>
-    <tr><td class="paramname">pos</td><td>Starts with the display column </td></tr>
+    <tr><td class="paramname">start_pos</td><td>Starts with the display column </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a394c22eb0313f5ee541d935ebac3e40c" name="a394c22eb0313f5ee541d935ebac3e40c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a394c22eb0313f5ee541d935ebac3e40c">&#9670;&#160;</a></span>lcd_print()</h2>
+<a id="a5f62ce5f34e89c739b9758ead300412c" name="a5f62ce5f34e89c739b9758ead300412c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f62ce5f34e89c739b9758ead300412c">&#9670;&#160;</a></span>lcd_line() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_line </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char</td>          <td class="paramname"><span class="paramname"><em>str</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="dm__hd44780_8h.html#a4c5d52ee693f6330daece942b29abfa8">lcd_line_t</a></td>          <td class="paramname"><span class="paramname"><em>line</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>start_pos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Outputs a string on entry line. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">str</td><td>A string </td></tr>
+    <tr><td class="paramname">line</td><td>Display row </td></tr>
+    <tr><td class="paramname">start_pos</td><td>Starts with the display column </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01e9f62e0e90541adcdb83f79783af22" name="a01e9f62e0e90541adcdb83f79783af22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e9f62e0e90541adcdb83f79783af22">&#9670;&#160;</a></span>lcd_print() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -918,7 +1270,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_print </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const char</td>          <td class="paramname"><span class="paramname"><em>str</em></span>[]</td><td>)</td>
+          <td class="paramtype">const char</td>          <td class="paramname"><span class="paramname"><em>str</em></span>[]</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -927,7 +1279,6 @@ Functions</h2></td></tr>
 <p>Outputs a string to buffer. </p>
 <p>No line overflow control. The CR character will be skipped. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">str</td><td>A string </td></tr>
   </table>
   </dd>
@@ -935,8 +1286,131 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa77244422ed054fbdaf2164af4d27f54" name="aa77244422ed054fbdaf2164af4d27f54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa77244422ed054fbdaf2164af4d27f54">&#9670;&#160;</a></span>lcd_refresh_ml()</h2>
+<a id="ab3885368c68cc3428384334e9762ef58" name="ab3885368c68cc3428384334e9762ef58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3885368c68cc3428384334e9762ef58">&#9670;&#160;</a></span>lcd_print() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_print </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char</td>          <td class="paramname"><span class="paramname"><em>str</em></span>[]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Outputs a string to buffer. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a></p>
+<p>No line overflow control. The CR character will be skipped. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">str</td><td>A string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae27adf4e58f28ce91c8033149bac5846" name="ae27adf4e58f28ce91c8033149bac5846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27adf4e58f28ce91c8033149bac5846">&#9670;&#160;</a></span>lcd_read_busy_and_addr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a> lcd_read_busy_and_addr </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits until display is buisy and returns address counter contents. </p>
+<dl class="section return"><dt>Returns</dt><dd>Address counter contents. </dd></dl>
+
+</div>
+</div>
+<a id="a3ac791792409712febd6a6bd76a16417" name="a3ac791792409712febd6a6bd76a16417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac791792409712febd6a6bd76a16417">&#9670;&#160;</a></span>lcd_read_busy_and_addr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a> lcd_read_busy_and_addr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits until display is buisy and returns address counter contents. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Address counter contents. </dd></dl>
+
+</div>
+</div>
+<a id="a8451ab51f6a435e2b7864e47d9f7b2df" name="a8451ab51f6a435e2b7864e47d9f7b2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8451ab51f6a435e2b7864e47d9f7b2df">&#9670;&#160;</a></span>lcd_read_data() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a> lcd_read_data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads data from CGRAM or from DDRAM. </p>
+<dl class="section return"><dt>Returns</dt><dd>Readed byte </dd></dl>
+
+</div>
+</div>
+<a id="a87a8645c2f2a4e787bb3d8670e6a55c8" name="a87a8645c2f2a4e787bb3d8670e6a55c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a8645c2f2a4e787bb3d8670e6a55c8">&#9670;&#160;</a></span>lcd_read_data() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defs_8h.html#a0661d7d1353e0bca70c64563f635b034">byte_t</a> lcd_read_data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads data from CGRAM or from DDRAM. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Readed byte </dd></dl>
+
+</div>
+</div>
+<a id="a85d9564f6a160ff8784d2b4c1047a2e0" name="a85d9564f6a160ff8784d2b4c1047a2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85d9564f6a160ff8784d2b4c1047a2e0">&#9670;&#160;</a></span>lcd_refresh_ml() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -944,7 +1418,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_refresh_ml </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const char</td>          <td class="paramname"><span class="paramname"><em>str</em></span>[]</td><td>)</td>
+          <td class="paramtype">const char</td>          <td class="paramname"><span class="paramname"><em>str</em></span>[]</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -953,7 +1427,6 @@ Functions</h2></td></tr>
 <p>Outputs a string on all lines. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">str</td><td>A string </td></tr>
   </table>
   </dd>
@@ -961,8 +1434,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a96d463fe9c5e2a2fbac102cf12abd68e" name="a96d463fe9c5e2a2fbac102cf12abd68e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96d463fe9c5e2a2fbac102cf12abd68e">&#9670;&#160;</a></span>lcd_set_pos()</h2>
+<a id="af61bac38715de94c070df5a5e89e4193" name="af61bac38715de94c070df5a5e89e4193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af61bac38715de94c070df5a5e89e4193">&#9670;&#160;</a></span>lcd_refresh_ml() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_refresh_ml </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char</td>          <td class="paramname"><span class="paramname"><em>str</em></span>[]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Outputs a string on all lines. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">str</td><td>A string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad69ec9567952ecbf9c5d4b12ec0d2b6f" name="ad69ec9567952ecbf9c5d4b12ec0d2b6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad69ec9567952ecbf9c5d4b12ec0d2b6f">&#9670;&#160;</a></span>lcd_set_pos() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -970,7 +1473,43 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lcd_set_pos </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aaecfe54c90af5aec92e04909807db5d6">__LCD_MULTIMODE_ONLY_INFO_ARG_WITH_COMMA</a>(info) const <a class="el" href="dm__hd44780_8h.html#a4c5d52ee693f6330daece942b29abfa8">lcd_line_t</a></td>          <td class="paramname"><span class="paramname"><em>line</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="#a511ed2d6868877588c706a6b89ed8d29">lcd_info_t</a> *const</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="dm__hd44780_8h.html#a4c5d52ee693f6330daece942b29abfa8">lcd_line_t</a></td>          <td class="paramname"><span class="paramname"><em>line</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets DDRAM address to a given position. </p>
+<p>Multidisplay or some code modes only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> , <a class="el" href="#a9031230f1d3bedc4f69d36493406d8cb" title="This allows for the same code to be achieved with the macro LCD_HD44780_PIN_MULTI_MODE on and off.">LCD_HD44780_PIN_SINGLE_SOME_CODE</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td><a class="el" href="#a511ed2d6868877588c706a6b89ed8d29" title="Information to distinguish a specific display from several connected ones.">lcd_info_t</a> reference. </td></tr>
+    <tr><td class="paramname">line</td><td>Display row </td></tr>
+    <tr><td class="paramname">pos</td><td>Display column </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a000f85ed44ec75b54c3896f1f9ae0ec3" name="a000f85ed44ec75b54c3896f1f9ae0ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a000f85ed44ec75b54c3896f1f9ae0ec3">&#9670;&#160;</a></span>lcd_set_pos() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcd_set_pos </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="dm__hd44780_8h.html#a4c5d52ee693f6330daece942b29abfa8">lcd_line_t</a></td>          <td class="paramname"><span class="paramname"><em>line</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -983,7 +1522,6 @@ Functions</h2></td></tr>
 <p>Sets DDRAM address to a given position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td><a class="el" href="#a121fcd5d9d36db6ab3f2d4f6faf09a1a">lcd_info_t</a> reference. Multidisplay mode only. See <a class="el" href="#a80a56b26447e22d845c6137ad7421357" title="Multidisplay display mode.">LCD_HD44780_PIN_MULTI_MODE</a> </td></tr>
     <tr><td class="paramname">line</td><td>Display row </td></tr>
     <tr><td class="paramname">pos</td><td>Display column </td></tr>
   </table>

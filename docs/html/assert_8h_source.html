@@ -106,38 +106,55 @@ $(function(){initNavTree('assert_8h_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <a href="assert_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ---------------------------------------------------------------------------+</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//                  This file is part of SLS AVR Tools</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// ---------------------------------------------------------------------------+</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Copyright (C) 2026 Simon Litt</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// This program is free software: you can redistribute it and/or modify it</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// under the terms of the GNU General Public License as published by the Free</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// Software Foundation, version 3.</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// This program is distributed in the hope that it will be useful, but WITHOUT</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// more details.</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// You should have received a copy of the GNU General Public License along</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// with this program. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// ---------------------------------------------------------------------------+</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#ifndef SLS_AVR_ASSERT_H_</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#define SLS_AVR_ASSERT_H_</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;<a class="code" href="assert_8h.html">assert.h</a>&gt;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#if defined(NDEBUG)</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#   define assert_na(e) ((void)0)</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#else </span><span class="comment">// !NDEBUG</span><span class="preprocessor"></span></div>
-<div class="foldopen" id="foldopen00049" data-start="" data-end="">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="assert_8h.html#af99dba87c80c5117e080ef0ed62eb877">   49</a></span><span class="preprocessor">#   define assert_na(e) ((e) ? (void)0 : \</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">                    fprintf(stderr, &quot;Assertion failed: (%s), function %s, file %s, line %u.\n&quot;, #e, __func__ , __FILE__, __LINE__))</span></div>
-</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif </span><span class="comment">// NDEBUG</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//                  This file is part of SLS AVR Library</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//              https://github.com/SimonLitt/sls-avr-lib</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// ---------------------------------------------------------------------------+</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// Copyright (C) 2025 Simon Litt &lt;simon@1itt.net&gt; https://coding.1itt.net,</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//                                                https://github.com/SimonLitt</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// This program is free software: you can redistribute it and/or modify it</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// under the terms of the GNU General Public License as published by the Free</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Software Foundation, version 3.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// This program is distributed in the hope that it will be useful, but WITHOUT</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// more details.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// You should have received a copy of the GNU General Public License along</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// with this program. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// ---------------------------------------------------------------------------+</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#ifndef SLS_AVR_ASSERT_H_</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#define SLS_AVR_ASSERT_H_</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#include &lt;<a class="code" href="assert_8h.html">assert.h</a>&gt;</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">// SLS_AVR_ASSERT_H_</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#if defined(NDEBUG)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#   define assert_na(e) ((void)0)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#else </span><span class="comment">// !NDEBUG</span><span class="preprocessor"></span></div>
+<div class="foldopen" id="foldopen00062" data-start="" data-end="">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="assert_8h.html#aef00618ac7543a53b0ba6867d39d771f">   62</a></span><span class="preprocessor">#   define assert_na(expression)    ((expression) ? (void)0 : \</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">                    fprintf(stderr, &quot;Assertion failed: (%s), function %s, file %s, line %u.\n&quot;, #expression, __func__ , __FILE__, __LINE__))</span></div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif </span><span class="comment">// NDEBUG</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#if defined(__DOXYGEN__)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="assert_8h.html#a442c02940502d8ec1a5e81cae6640806">   68</a></span><span class="preprocessor">#   define ASSERT_USE_ABORT </span><span class="preprocessor"></span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="assert_8h.html#a87e006a00875d2e518652108f6cb5790">   75</a></span><span class="preprocessor">#   define ASSERT(expression)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#endif </span><span class="comment">// __DOXYGEN__</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#ifdef ASSERT_USE_ABORT</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#   ifndef __ASSERT_USE_STDERR</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#       define __ASSERT_USE_STDERR</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#   endif </span><span class="comment">// __ASSERT_USE_STDERR</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#   define ASSERT(e)    assert((e))</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#   define ASSERT(e)    assert_na((e))</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif </span><span class="comment">// ASSERT_USE_ABORT</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif </span><span class="comment">// SLS_AVR_ASSERT_H_</span></div>
 <div class="ttc" id="aassert_8h_html"><div class="ttname"><a href="assert_8h.html">assert.h</a></div><div class="ttdoc">Alternative AVR assert.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

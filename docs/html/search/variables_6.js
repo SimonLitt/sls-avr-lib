@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['up_0',['up',['../structnibble__t.html#a6029b89e19f1ff082e112ccb82b4f58f',1,'nibble_t']]]
+  ['nibble_0',['nibble',['../unionbyte__flags__t.html#a28baf7960ec1eb2c739b70b4155f136c',1,'byte_flags_t']]]
 ];

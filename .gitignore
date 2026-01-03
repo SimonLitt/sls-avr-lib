@@ -1,2 +1,9 @@
 TODO
 next
+info
+examples/schemes/examples-backups
+examples/schemes/*.kicad_prl
+examples/lcd_hd44780_pin/bin
+examples/lcd_hd44780_pin/obj
+examples/**/*.layout
+

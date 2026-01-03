@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nibble_0',['nibble',['../unionbyte__flags__t.html#a28baf7960ec1eb2c739b70b4155f136c',1,'byte_flags_t']]]
+  ['flags_0',['flags',['../unionbyte__flags__t.html#ac199e178c45100d3c42a1f0374fab372',1,'byte_flags_t::flags'],['../structlcd__init__t.html#aa2585d779da0ab21273a8d92de9a0ebe',1,'lcd_init_t::flags']]]
 ];

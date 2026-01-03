@@ -102,6 +102,9 @@ $(function(){initNavTree('uart__stdio_8h.html',''); initResizable(true); });
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">uart_stdio.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -110,14 +113,391 @@ $(function(){initNavTree('uart__stdio_8h.html',''); initResizable(true); });
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;avr-uart/uart.h&gt;</code><br />
-<code>#include &lt;avr/pgmspace.h&gt;</code><br />
 </div>
 <p><a href="uart__stdio_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a00c8204e19342b52d19d93ddcc34d380" id="r_a00c8204e19342b52d19d93ddcc34d380"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00c8204e19342b52d19d93ddcc34d380">stdout_set_to_uart</a>()</td></tr>
+<tr class="memdesc:a00c8204e19342b52d19d93ddcc34d380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard output via UART, by default alias for <a class="el" href="#a19822aa52865431c4da0b28e37b14cf3" title="Sets standard output via USART0.">stdout_set_to_uart0</a>.  <br /></td></tr>
+<tr class="separator:a00c8204e19342b52d19d93ddcc34d380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51aae0cd5080921f04caac943da92a3a" id="r_a51aae0cd5080921f04caac943da92a3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51aae0cd5080921f04caac943da92a3a">stderr_set_to_uart</a>()</td></tr>
+<tr class="memdesc:a51aae0cd5080921f04caac943da92a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard error output via UART, by default alias for <a class="el" href="#a19822aa52865431c4da0b28e37b14cf3" title="Sets standard output via USART0.">stdout_set_to_uart0</a>.  <br /></td></tr>
+<tr class="separator:a51aae0cd5080921f04caac943da92a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4c9ef93f2f1d76f99a6609dfead116" id="r_aea4c9ef93f2f1d76f99a6609dfead116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea4c9ef93f2f1d76f99a6609dfead116">stdin_set_from_uart</a>()</td></tr>
+<tr class="memdesc:aea4c9ef93f2f1d76f99a6609dfead116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard input via UART, by default alias for <a class="el" href="#a19822aa52865431c4da0b28e37b14cf3" title="Sets standard output via USART0.">stdout_set_to_uart0</a>.  <br /></td></tr>
+<tr class="separator:aea4c9ef93f2f1d76f99a6609dfead116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a19822aa52865431c4da0b28e37b14cf3" id="r_a19822aa52865431c4da0b28e37b14cf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19822aa52865431c4da0b28e37b14cf3">stdout_set_to_uart0</a> (void)</td></tr>
+<tr class="memdesc:a19822aa52865431c4da0b28e37b14cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard output via USART0.  <br /></td></tr>
+<tr class="separator:a19822aa52865431c4da0b28e37b14cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6c8880d547b9496cd332c6b7df67f7" id="r_aee6c8880d547b9496cd332c6b7df67f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee6c8880d547b9496cd332c6b7df67f7">stderr_set_to_uart0</a> (void)</td></tr>
+<tr class="memdesc:aee6c8880d547b9496cd332c6b7df67f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard error output via USART0.  <br /></td></tr>
+<tr class="separator:aee6c8880d547b9496cd332c6b7df67f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad163a286d3f4a17e2f4f648c341ccd9d" id="r_ad163a286d3f4a17e2f4f648c341ccd9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad163a286d3f4a17e2f4f648c341ccd9d">stdin_set_from_uart0</a> (void)</td></tr>
+<tr class="memdesc:ad163a286d3f4a17e2f4f648c341ccd9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard input via USART0.  <br /></td></tr>
+<tr class="separator:ad163a286d3f4a17e2f4f648c341ccd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e5bbac184b56023393693faa454394" id="r_a76e5bbac184b56023393693faa454394"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76e5bbac184b56023393693faa454394">stdout_set_to_uart1</a> (void)</td></tr>
+<tr class="memdesc:a76e5bbac184b56023393693faa454394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard output via USART1.  <br /></td></tr>
+<tr class="separator:a76e5bbac184b56023393693faa454394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c0f79919384842a60f13b4973a0f27" id="r_ac0c0f79919384842a60f13b4973a0f27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0c0f79919384842a60f13b4973a0f27">stderr_set_to_uart1</a> (void)</td></tr>
+<tr class="memdesc:ac0c0f79919384842a60f13b4973a0f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard error output via USART1.  <br /></td></tr>
+<tr class="separator:ac0c0f79919384842a60f13b4973a0f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62bdc88dc89551905f4fc0c67baa5b8" id="r_ab62bdc88dc89551905f4fc0c67baa5b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab62bdc88dc89551905f4fc0c67baa5b8">stdin_set_from_uart1</a> (void)</td></tr>
+<tr class="memdesc:ab62bdc88dc89551905f4fc0c67baa5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard input via USART1.  <br /></td></tr>
+<tr class="separator:ab62bdc88dc89551905f4fc0c67baa5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3322ca4d5db76df3f5a8aa25fdcf332b" id="r_a3322ca4d5db76df3f5a8aa25fdcf332b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3322ca4d5db76df3f5a8aa25fdcf332b">stdout_set_to_uart2</a> (void)</td></tr>
+<tr class="memdesc:a3322ca4d5db76df3f5a8aa25fdcf332b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard output via USART2.  <br /></td></tr>
+<tr class="separator:a3322ca4d5db76df3f5a8aa25fdcf332b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add839763effd95caa18d7e4f772c3ac3" id="r_add839763effd95caa18d7e4f772c3ac3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add839763effd95caa18d7e4f772c3ac3">stderr_set_to_uart2</a> (void)</td></tr>
+<tr class="memdesc:add839763effd95caa18d7e4f772c3ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard error output via USART2.  <br /></td></tr>
+<tr class="separator:add839763effd95caa18d7e4f772c3ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b19e35b65cbad3f43d4a85c69c9e7c" id="r_ae1b19e35b65cbad3f43d4a85c69c9e7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1b19e35b65cbad3f43d4a85c69c9e7c">stdin_set_from_uart2</a> (void)</td></tr>
+<tr class="memdesc:ae1b19e35b65cbad3f43d4a85c69c9e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard input via USART2.  <br /></td></tr>
+<tr class="separator:ae1b19e35b65cbad3f43d4a85c69c9e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4beb9784c77dd56f2ec1db6330a26cfc" id="r_a4beb9784c77dd56f2ec1db6330a26cfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4beb9784c77dd56f2ec1db6330a26cfc">stdout_set_to_uart3</a> (void)</td></tr>
+<tr class="memdesc:a4beb9784c77dd56f2ec1db6330a26cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard output via USART3.  <br /></td></tr>
+<tr class="separator:a4beb9784c77dd56f2ec1db6330a26cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419e0fc3dc75816959050d073f9ea9c6" id="r_a419e0fc3dc75816959050d073f9ea9c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a419e0fc3dc75816959050d073f9ea9c6">stderr_set_to_uart3</a> (void)</td></tr>
+<tr class="memdesc:a419e0fc3dc75816959050d073f9ea9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard error output via USART3.  <br /></td></tr>
+<tr class="separator:a419e0fc3dc75816959050d073f9ea9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a067e05b7e67e4a2eaeec00cac2fb1880" id="r_a067e05b7e67e4a2eaeec00cac2fb1880"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a067e05b7e67e4a2eaeec00cac2fb1880">stdin_set_from_uart3</a> (void)</td></tr>
+<tr class="memdesc:a067e05b7e67e4a2eaeec00cac2fb1880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets standard input via USART3.  <br /></td></tr>
+<tr class="separator:a067e05b7e67e4a2eaeec00cac2fb1880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Standard IO thouth USART. </p>
-<dl class="section author"><dt>Author</dt><dd>Simon Litt </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>GNU General Public License v3.0 </dd></dl>
-</div></div><!-- contents -->
+<dl class="section author"><dt>Author</dt><dd>Simon Litt <a href="#" onclick="location.href='mai'+'lto:'+'sim'+'on'+'@1i'+'tt'+'.ne'+'t'; return false;">simon<span class="obfuscator">.nosp@m.</span>@1it<span class="obfuscator">.nosp@m.</span>t.net</a> <a href="https://coding.1itt.net">https://coding.1itt.net</a>, <a href="https://github.com/SimonLitt">https://github.com/SimonLitt</a> </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>GNU General Public License v3.0</dd></dl>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="uart__stdio_8h.html">sls-avr/uart_stdio.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#define UART_BAUD_RATE 9600</span></div>
+<div class="line">...</div>
+<div class="line">int main(<span class="keywordtype">void</span>) {</div>
+<div class="line">    ...</div>
+<div class="line">    uart_init(UART_BAUD_SELECT(UART_BAUD_RATE, F_CPU));</div>
+<div class="line">    <a class="code hl_define" href="#a00c8204e19342b52d19d93ddcc34d380">stdout_set_to_uart</a>();</div>
+<div class="line">    <a class="code hl_define" href="#a51aae0cd5080921f04caac943da92a3a">stderr_set_to_uart</a>();</div>
+<div class="line">    printf(<span class="stringliteral">&quot;OK!\n&quot;</span>);</div>
+<div class="line">    fprintf(stderr, <span class="stringliteral">&quot;Error!&quot;</span>);</div>
+<div class="line">    ...</div>
+<div class="line">}</div>
+<div class="ttc" id="auart__stdio_8h_html"><div class="ttname"><a href="uart__stdio_8h.html">uart_stdio.h</a></div><div class="ttdoc">Standard IO thouth USART.</div></div>
+<div class="ttc" id="auart__stdio_8h_html_a00c8204e19342b52d19d93ddcc34d380"><div class="ttname"><a href="#a00c8204e19342b52d19d93ddcc34d380">stdout_set_to_uart</a></div><div class="ttdeci">#define stdout_set_to_uart()</div><div class="ttdoc">Sets standard output via UART, by default alias for stdout_set_to_uart0.</div><div class="ttdef"><b>Definition</b> uart_stdio.h:73</div></div>
+<div class="ttc" id="auart__stdio_8h_html_a51aae0cd5080921f04caac943da92a3a"><div class="ttname"><a href="#a51aae0cd5080921f04caac943da92a3a">stderr_set_to_uart</a></div><div class="ttdeci">#define stderr_set_to_uart()</div><div class="ttdoc">Sets standard error output via UART, by default alias for stdout_set_to_uart0.</div><div class="ttdef"><b>Definition</b> uart_stdio.h:76</div></div>
+</div><!-- fragment --><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="uart__stdio_8h.html">sls-avr/uart_stdio.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#define UART_BAUD_RATE 9600</span></div>
+<div class="line">...</div>
+<div class="line">int main(<span class="keywordtype">void</span>) {</div>
+<div class="line">    ...</div>
+<div class="line">    uart_init(UART_BAUD_SELECT(UART_BAUD_RATE, F_CPU));</div>
+<div class="line">    <a class="code hl_define" href="#a00c8204e19342b52d19d93ddcc34d380">stdout_set_to_uart</a>();</div>
+<div class="line">    <a class="code hl_define" href="#aea4c9ef93f2f1d76f99a6609dfead116">stdin_set_from_uart</a>();</div>
+<div class="line">    <span class="keywordtype">int</span> ch = getchar();</div>
+<div class="line">    <span class="keywordflow">if</span> (ch != EOF) {</div>
+<div class="line">        printf(<span class="stringliteral">&quot;GET: `%s`!\n&quot;</span>, ch);</div>
+<div class="line">    }</div>
+<div class="line">    ...</div>
+<div class="line">}</div>
+<div class="ttc" id="auart__stdio_8h_html_aea4c9ef93f2f1d76f99a6609dfead116"><div class="ttname"><a href="#aea4c9ef93f2f1d76f99a6609dfead116">stdin_set_from_uart</a></div><div class="ttdeci">#define stdin_set_from_uart()</div><div class="ttdoc">Sets standard input via UART, by default alias for stdout_set_to_uart0.</div><div class="ttdef"><b>Definition</b> uart_stdio.h:79</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a51aae0cd5080921f04caac943da92a3a" name="a51aae0cd5080921f04caac943da92a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51aae0cd5080921f04caac943da92a3a">&#9670;&#160;</a></span>stderr_set_to_uart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define stderr_set_to_uart</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="#aee6c8880d547b9496cd332c6b7df67f7">stderr_set_to_uart0</a>()</div>
+<div class="ttc" id="auart__stdio_8h_html_aee6c8880d547b9496cd332c6b7df67f7"><div class="ttname"><a href="#aee6c8880d547b9496cd332c6b7df67f7">stderr_set_to_uart0</a></div><div class="ttdeci">void stderr_set_to_uart0(void)</div><div class="ttdoc">Sets standard error output via USART0.</div></div>
+</div><!-- fragment -->
+<p>Sets standard error output via UART, by default alias for <a class="el" href="#a19822aa52865431c4da0b28e37b14cf3" title="Sets standard output via USART0.">stdout_set_to_uart0</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a19822aa52865431c4da0b28e37b14cf3" title="Sets standard output via USART0.">stdout_set_to_uart0</a> </dd></dl>
+
+</div>
+</div>
+<a id="aea4c9ef93f2f1d76f99a6609dfead116" name="aea4c9ef93f2f1d76f99a6609dfead116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea4c9ef93f2f1d76f99a6609dfead116">&#9670;&#160;</a></span>stdin_set_from_uart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define stdin_set_from_uart</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="#ad163a286d3f4a17e2f4f648c341ccd9d">stdin_set_from_uart0</a>()</div>
+<div class="ttc" id="auart__stdio_8h_html_ad163a286d3f4a17e2f4f648c341ccd9d"><div class="ttname"><a href="#ad163a286d3f4a17e2f4f648c341ccd9d">stdin_set_from_uart0</a></div><div class="ttdeci">void stdin_set_from_uart0(void)</div><div class="ttdoc">Sets standard input via USART0.</div></div>
+</div><!-- fragment -->
+<p>Sets standard input via UART, by default alias for <a class="el" href="#a19822aa52865431c4da0b28e37b14cf3" title="Sets standard output via USART0.">stdout_set_to_uart0</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a19822aa52865431c4da0b28e37b14cf3" title="Sets standard output via USART0.">stdout_set_to_uart0</a> </dd></dl>
+
+</div>
+</div>
+<a id="a00c8204e19342b52d19d93ddcc34d380" name="a00c8204e19342b52d19d93ddcc34d380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c8204e19342b52d19d93ddcc34d380">&#9670;&#160;</a></span>stdout_set_to_uart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define stdout_set_to_uart</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="#a19822aa52865431c4da0b28e37b14cf3">stdout_set_to_uart0</a>()</div>
+<div class="ttc" id="auart__stdio_8h_html_a19822aa52865431c4da0b28e37b14cf3"><div class="ttname"><a href="#a19822aa52865431c4da0b28e37b14cf3">stdout_set_to_uart0</a></div><div class="ttdeci">void stdout_set_to_uart0(void)</div><div class="ttdoc">Sets standard output via USART0.</div></div>
+</div><!-- fragment -->
+<p>Sets standard output via UART, by default alias for <a class="el" href="#a19822aa52865431c4da0b28e37b14cf3" title="Sets standard output via USART0.">stdout_set_to_uart0</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a19822aa52865431c4da0b28e37b14cf3" title="Sets standard output via USART0.">stdout_set_to_uart0</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aee6c8880d547b9496cd332c6b7df67f7" name="aee6c8880d547b9496cd332c6b7df67f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6c8880d547b9496cd332c6b7df67f7">&#9670;&#160;</a></span>stderr_set_to_uart0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stderr_set_to_uart0 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard error output via USART0. </p>
+
+</div>
+</div>
+<a id="ac0c0f79919384842a60f13b4973a0f27" name="ac0c0f79919384842a60f13b4973a0f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c0f79919384842a60f13b4973a0f27">&#9670;&#160;</a></span>stderr_set_to_uart1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stderr_set_to_uart1 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard error output via USART1. </p>
+
+</div>
+</div>
+<a id="add839763effd95caa18d7e4f772c3ac3" name="add839763effd95caa18d7e4f772c3ac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add839763effd95caa18d7e4f772c3ac3">&#9670;&#160;</a></span>stderr_set_to_uart2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stderr_set_to_uart2 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard error output via USART2. </p>
+
+</div>
+</div>
+<a id="a419e0fc3dc75816959050d073f9ea9c6" name="a419e0fc3dc75816959050d073f9ea9c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419e0fc3dc75816959050d073f9ea9c6">&#9670;&#160;</a></span>stderr_set_to_uart3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stderr_set_to_uart3 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard error output via USART3. </p>
+
+</div>
+</div>
+<a id="ad163a286d3f4a17e2f4f648c341ccd9d" name="ad163a286d3f4a17e2f4f648c341ccd9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad163a286d3f4a17e2f4f648c341ccd9d">&#9670;&#160;</a></span>stdin_set_from_uart0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stdin_set_from_uart0 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard input via USART0. </p>
+
+</div>
+</div>
+<a id="ab62bdc88dc89551905f4fc0c67baa5b8" name="ab62bdc88dc89551905f4fc0c67baa5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62bdc88dc89551905f4fc0c67baa5b8">&#9670;&#160;</a></span>stdin_set_from_uart1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stdin_set_from_uart1 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard input via USART1. </p>
+
+</div>
+</div>
+<a id="ae1b19e35b65cbad3f43d4a85c69c9e7c" name="ae1b19e35b65cbad3f43d4a85c69c9e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b19e35b65cbad3f43d4a85c69c9e7c">&#9670;&#160;</a></span>stdin_set_from_uart2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stdin_set_from_uart2 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard input via USART2. </p>
+
+</div>
+</div>
+<a id="a067e05b7e67e4a2eaeec00cac2fb1880" name="a067e05b7e67e4a2eaeec00cac2fb1880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a067e05b7e67e4a2eaeec00cac2fb1880">&#9670;&#160;</a></span>stdin_set_from_uart3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stdin_set_from_uart3 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard input via USART3. </p>
+
+</div>
+</div>
+<a id="a19822aa52865431c4da0b28e37b14cf3" name="a19822aa52865431c4da0b28e37b14cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19822aa52865431c4da0b28e37b14cf3">&#9670;&#160;</a></span>stdout_set_to_uart0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stdout_set_to_uart0 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard output via USART0. </p>
+
+</div>
+</div>
+<a id="a76e5bbac184b56023393693faa454394" name="a76e5bbac184b56023393693faa454394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e5bbac184b56023393693faa454394">&#9670;&#160;</a></span>stdout_set_to_uart1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stdout_set_to_uart1 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard output via USART1. </p>
+
+</div>
+</div>
+<a id="a3322ca4d5db76df3f5a8aa25fdcf332b" name="a3322ca4d5db76df3f5a8aa25fdcf332b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3322ca4d5db76df3f5a8aa25fdcf332b">&#9670;&#160;</a></span>stdout_set_to_uart2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stdout_set_to_uart2 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard output via USART2. </p>
+
+</div>
+</div>
+<a id="a4beb9784c77dd56f2ec1db6330a26cfc" name="a4beb9784c77dd56f2ec1db6330a26cfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4beb9784c77dd56f2ec1db6330a26cfc">&#9670;&#160;</a></span>stdout_set_to_uart3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stdout_set_to_uart3 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets standard output via USART3. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
