@@ -27,40 +27,47 @@
  * \copyright	Public Domain
  * \author		Simon Litt <simon@1itt.net> https://coding.1itt.net,
  *              							https://github.com/SimonLitt
- * \file		quick_start.c
+ * \file		status_led_pins.h
  *
  * ---------------------------------------------------------------------------+
- * \brief		LCD HD44780 quick start example
- *
- * \details     Scheme path:	examples/schemes/base.png
-								examples/schemes/base.kicad_sch
-				Compiler options required for successful build:
-								-include "quick_start_def.h"
-								-DF_CPU=16000000UL
-				Search directories:
-								../../include
-				Additional compile for link files:
-								../../src/sls-avr/lcd_hd44780_pin.c
+ * \brief		AVR port definition
  * --------------------------------------------------------------------------+
  */
+#ifndef PINS_H_INCLUDED
+#define PINS_H_INCLUDED
 
-#include <sls-avr/lcd_hd44780_pin.h>
-#include <util/delay.h>
+/*		Port B */
+//#define __PB0_PURPOSE		PB0
+//#define __PB1_PURPOSE		PB1
+//#define __PB2_PURPOSE		PB2
+//#define __PB3_PURPOSE		PB3
+//#define __PB4_PURPOSE		PB4
+//#define __PB5_PURPOSE		PB5
+//#define __PB6_PURPOSE		PB6
+//#define __PB7_PURPOSE		PB7
 
-int main(void) {
-	lcd_init_t config = {
-		.flags = HD44780_INIT_DISP_ON | HD44780_INIT_FONT_NORMAL | HD44780_INIT_CURSOR_OFF | HD44780_INIT_BLINKING_OFF | HD44780_INIT_SHIFT_OFF | HD44780_INIT_MOV_DIR_INC,
-	};
-	lcd_init(&config);
-	lcd_print("Initialization...");
-	_delay_ms(1500);
-	lcd_line("Quick start example:", LCD_ROW_1, 0);
-	lcd_line("line 2", LCD_ROW_2, 4);
-	lcd_line("line 3", LCD_ROW_3, 4);
-	lcd_line("It's OK!", LCD_ROW_4, 10);
-    while(1) {
+/*		Port C */
+#define LED_STAT_PORT		C
+#define LED_ERR_PORT		C
 
-    }
+//#define __PC0_PURPOSE		PC0
+#define LED_ERR_PIN			PC1
+#define LED_STAT_PIN		PC2
+//#define __PC3_PURPOSE		PC3
+//#define __PC4_PURPOSE		PC4
+//#define __PC5_PURPOSE		PC5
+//#define __PC6_PURPOSE		PC6
 
-    return 0;
-}
+/*		Port D */
+#define LED_INF_PORT		D
+
+//#define __PD0_PURPOSE		PD0
+//#define __PD1_PURPOSE		PD1
+#define LED_INF_PIN			PD2
+//#define __PD3_PURPOSE		PD3
+//#define __PD4_PURPOSE		PD4
+//#define __PD5_PURPOSE		PD5
+//#define __PD6_PURPOSE		PD6
+//#define __PD7_PURPOSE		PD7
+
+#endif // PINS_H_INCLUDED

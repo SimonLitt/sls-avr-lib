@@ -27,7 +27,7 @@
  * \copyright	Public Domain
  * \author		Simon Litt <simon@1itt.net> https://coding.1itt.net,
  *              							https://github.com/SimonLitt
- * \file		quick_start.c
+ * \file		status_led.c
  *
  * ---------------------------------------------------------------------------+
  * \brief		LCD HD44780 quick start example
@@ -35,31 +35,42 @@
  * \details     Scheme path:	examples/schemes/base.png
 								examples/schemes/base.kicad_sch
 				Compiler options required for successful build:
-								-include "quick_start_def.h"
+								-include "status_led_def.h"
+								or directly (-include "status_led_pins.h")
 								-DF_CPU=16000000UL
 				Search directories:
 								../../include
 				Additional compile for link files:
-								../../src/sls-avr/lcd_hd44780_pin.c
+								../../src/sls-avr/status_led.c
  * --------------------------------------------------------------------------+
  */
 
-#include <sls-avr/lcd_hd44780_pin.h>
+#include <avr/io.h>
+#include <sls-avr/status_led.h>
 #include <util/delay.h>
 
 int main(void) {
-	lcd_init_t config = {
-		.flags = HD44780_INIT_DISP_ON | HD44780_INIT_FONT_NORMAL | HD44780_INIT_CURSOR_OFF | HD44780_INIT_BLINKING_OFF | HD44780_INIT_SHIFT_OFF | HD44780_INIT_MOV_DIR_INC,
-	};
-	lcd_init(&config);
-	lcd_print("Initialization...");
-	_delay_ms(1500);
-	lcd_line("Quick start example:", LCD_ROW_1, 0);
-	lcd_line("line 2", LCD_ROW_2, 4);
-	lcd_line("line 3", LCD_ROW_3, 4);
-	lcd_line("It's OK!", LCD_ROW_4, 10);
-    while(1) {
+	init_status_led();
+    _delay_ms(500); // Simulation initialization
+    status_led_ready();
 
+    uint8_t t = 0;
+    uint16_t e = 0;
+    while(1) {
+		_delay_ms(4);
+
+		if (e == 1023) { // Simulating a error
+			e = t = 0;
+			led_stat_off();
+			led_err_on();
+		}
+
+		if (t == 0xFF) { // Simulating a timer
+			led_err_off(); // Clear error
+			led_stat_switch(); // blinking
+		}
+		++t;
+		++e;
     }
 
     return 0;
